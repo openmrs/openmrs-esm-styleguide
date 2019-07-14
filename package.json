@@ -5,6 +5,7 @@
   "main": "dist/styleguide.js",
   "scripts": {
     "start": "webpack-dev-server",
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
