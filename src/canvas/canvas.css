@@ -1,4 +1,4 @@
 html,
 body {
-  background-color: #f4f5f8;
+  background-color: var(--omrs-background-canvas);
 }
