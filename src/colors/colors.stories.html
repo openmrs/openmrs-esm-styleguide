@@ -1,35 +1,60 @@
-<h2>Colors for OpenMRS!</h2>
-<div class="colors-story-container">
-  <div class="colors-story-color">
-    <div
-      class="colors-story-rectangle"
-      style="background-color: var(--omrs-primary-blue);"
-    ></div>
-    <span class="colors-story-color-label">--omrs-primary-blue</span>
-  </div>
-  <div class="colors-story-color">
-    <div
-      class="colors-story-rectangle"
-      style="background-color: var(--omrs-text-black);"
-    ></div>
-    <span class="colors-story-color-label">--omrs-text-black</span>
-  </div>
-  <div class="colors-story-color">
-    <div
-      class="colors-story-rectangle"
-      style="background-color: var(--omrs-inactive-grey);"
-    ></div>
-    <span class="colors-story-color-label">--omrs-inactive-grey</span>
-  </div>
-  <div class="colors-story-color">
-    <div
-      class="colors-story-rectangle"
-      style="background-color: var(--omrs-background-canvas);"
-    ></div>
-    <span class="colors-story-color-label">--omrs-background-canvas</span>
+<div class="colors-story-page">
+  <h2>OpenMRS colors</h2>
+  <section>
+    OpenMRS colors are
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties"
+      rel="noopener"
+      target="_blank"
+      >css variables</a
+    >
+    that can be used by any code at any time.
+  </section>
+  <section>
+    Example usage:
+    <pre>
+  /* in a css file */
+  .my-css-class {
+    background-color: var(--omrs-primary-blue);
+  }
+    </pre>
+  </section>
+  <div class="colors-story-container">
+    <div class="colors-story-color">
+      <div
+        class="colors-story-rectangle"
+        style="background-color: var(--omrs-primary-blue);"
+      ></div>
+      <span class="colors-story-color-label">--omrs-primary-blue</span>
+    </div>
+    <div class="colors-story-color">
+      <div
+        class="colors-story-rectangle"
+        style="background-color: var(--omrs-text-black);"
+      ></div>
+      <span class="colors-story-color-label">--omrs-text-black</span>
+    </div>
+    <div class="colors-story-color">
+      <div
+        class="colors-story-rectangle"
+        style="background-color: var(--omrs-inactive-grey);"
+      ></div>
+      <span class="colors-story-color-label">--omrs-inactive-grey</span>
+    </div>
+    <div class="colors-story-color">
+      <div
+        class="colors-story-rectangle"
+        style="background-color: var(--omrs-background-canvas);"
+      ></div>
+      <span class="colors-story-color-label">--omrs-background-canvas</span>
+    </div>
   </div>
 </div>
 <style>
+  .colors-story-page section {
+    margin: 16px 0;
+  }
+
   .colors-story-container {
     display: flex;
     align-items: center;
