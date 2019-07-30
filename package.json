@@ -5,6 +5,7 @@
   "main": "dist/styleguide.js",
   "scripts": {
     "start": "webpack-dev-server",
+    "storybook": "start-storybook",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,7 +28,11 @@
   },
   "homepage": "https://github.com/openmrs/openmrs-esm-styleguide#readme",
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@storybook/addon-a11y": "^5.1.9",
+    "@storybook/html": "^5.1.9",
     "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
     "css-loader": "^3.0.0",
     "cssnano": "^4.1.10",
     "file-loader": "^4.0.0",
