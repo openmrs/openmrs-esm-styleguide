@@ -7,25 +7,24 @@ script:
   - echo "Folder name in Digital Ocean Spaces - $TRAVIS_COMMIT"
   - mkdir -p dist/styleguide/$TRAVIS_COMMIT
   - mv dist/*.* dist/styleguide/$TRAVIS_COMMIT/
-before_deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: master
 deploy:
-  provider: s3
-  access_key_id: "$DIGITAL_OCEAN_SPACES_KEY_ID"
-  secret_access_key: "$DIGITAL_OCEAN_SPACES_ACCESS_KEY"
-  bucket: "$DIGITAL_OCEAN_SPACES_BUCKET"
-  endpoint: "$DIGITAL_OCEAN_SPACES_ENDPOINT"
-  cache-control: "max-age=31536000"
-  local_dir: dist
-  skip_cleanup: true
-  acl: public_read
-  on:
-    branch: master
+  - provider: s3
+    access_key_id: "$DIGITAL_OCEAN_SPACES_KEY_ID"
+    secret_access_key: "$DIGITAL_OCEAN_SPACES_ACCESS_KEY"
+    bucket: "$DIGITAL_OCEAN_SPACES_BUCKET"
+    endpoint: "$DIGITAL_OCEAN_SPACES_ENDPOINT"
+    cache-control: "max-age=31536000"
+    local_dir: dist
+    skip_cleanup: true
+    acl: public_read
+    on:
+      branch: master
+  - provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
+    keep_history: true
+    on:
+      branch: master
 after_deploy:
   - echo "Updating import map to point to new version of @openmrs/styleguide"
   - curl -u $DEPLOYER_USERNAME:$DEPLOYER_PASSWORD -d '{ "service":"@openmrs/styleguide,"url":"https://spa-modules.nyc3.digitaloceanspaces.com/styleguide/'$TRAVIS_COMMIT'/styleguide.js" }' -X PATCH $DEPLOYER_HOST/services\?env=prod -H "Accept:application/json" -H "Content-Type:application/json" --fail
