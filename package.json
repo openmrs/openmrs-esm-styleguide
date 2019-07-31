@@ -6,12 +6,14 @@
   "scripts": {
     "start": "webpack-dev-server",
     "storybook": "start-storybook",
+    "build-storybook": "build-storybook",
+    "lint": "eslint src",
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged"
+      "pre-commit": "pretty-quick --staged && npm run lint"
     }
   },
   "repository": {
@@ -29,11 +31,16 @@
   "homepage": "https://github.com/openmrs/openmrs-esm-styleguide#readme",
   "devDependencies": {
     "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "@storybook/addon-a11y": "^5.1.9",
     "@storybook/html": "^5.1.9",
     "autoprefixer": "^9.6.1",
+    "babel-eslint": "^11.0.0-beta.0",
     "babel-loader": "^8.0.6",
     "cssnano": "^4.1.10",
+    "eslint": "^6.1.0",
+    "eslint-config-important-stuff": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
     "husky": "^3.0.0",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.18.2",
@@ -42,5 +49,6 @@
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.7.2"
-  }
+  },
+  "dependencies": {}
 }
