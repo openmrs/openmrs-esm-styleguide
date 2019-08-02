@@ -5,7 +5,7 @@
   "main": "dist/styleguide.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "storybook": "start-storybook",
+    "storybook": "start-storybook --port 7000",
     "build-storybook": "build-storybook",
     "lint": "eslint src",
     "build": "webpack",
