@@ -12,34 +12,16 @@
   </section>
   <h3>Available colors</h3>
   <div class="stories-color-container">
+    <% colors.forEach(function(color) { %>
     <div class="stories-color-color">
       <div
         class="stories-color-rectangle"
-        style="background-color: var(--omrs-primary-blue);"
+        style="background-color: var(<%- color[1] %>);"
       ></div>
-      <span class="stories-color-color-label">--omrs-primary-blue</span>
+      <div class="stories-color-color-label"><%- color[0] %></div>
+      <div class="stories-color-color-label"><%- color[1] %></div>
     </div>
-    <div class="stories-color-color">
-      <div
-        class="stories-color-rectangle"
-        style="background-color: var(--omrs-text-black);"
-      ></div>
-      <span class="stories-color-color-label">--omrs-text-black</span>
-    </div>
-    <div class="stories-color-color">
-      <div
-        class="stories-color-rectangle"
-        style="background-color: var(--omrs-inactive-grey);"
-      ></div>
-      <span class="stories-color-color-label">--omrs-inactive-grey</span>
-    </div>
-    <div class="stories-color-color">
-      <div
-        class="stories-color-rectangle"
-        style="background-color: var(--omrs-background-canvas);"
-      ></div>
-      <span class="stories-color-color-label">--omrs-background-canvas</span>
-    </div>
+    <% }) %>
   </div>
   <h3>Code example</h3>
   <div class="stories-example lang-html">
