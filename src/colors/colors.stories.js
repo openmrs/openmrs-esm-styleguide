@@ -10,7 +10,8 @@ storiesOf("OpenMRS Styleguide", module).add("Colors", () => {
     "Primary blue": "--omrs-primary-blue",
     "Text black": "--omrs-text-black",
     "Inactive grey": "--omrs-inactive-grey",
-    "Background canvas": "--omrs-background-canvas"
+    "Background canvas": "--omrs-background-canvas",
+    "Critical alert red": "--omrs-critical-alert-red"
   };
 
   const defaultValue = "--omrs-primary-blue";
