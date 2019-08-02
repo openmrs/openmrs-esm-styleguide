@@ -1,9 +1,21 @@
-/* This file generated from https://google-webfonts-helper.herokuapp.com/fonts/roboto?subsets=latin */
-
 html,
 body {
   font-family: "Roboto", sans-serif;
 }
+
+.omrs-bold {
+  font-weight: bold;
+}
+
+.omrs-italic {
+  font-style: italic;
+}
+
+.omrs-underline {
+  text-decoration: underline;
+}
+
+/* The below code was generated from https://google-webfonts-helper.herokuapp.com/fonts/roboto?subsets=latin */
 
 /* roboto-regular - latin */
 @font-face {
