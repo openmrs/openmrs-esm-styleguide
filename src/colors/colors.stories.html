@@ -1,0 +1,94 @@
+<article class="stories-colors">
+  <h2>OpenMRS colors</h2>
+  <section>
+    OpenMRS colors are
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties"
+      rel="noopener"
+      target="_blank"
+      >css variables</a
+    >
+    that can be used by any code at any time.
+  </section>
+  <h3>Available colors</h3>
+  <div class="stories-color-container">
+    <div class="stories-color-color">
+      <div
+        class="stories-color-rectangle"
+        style="background-color: var(--omrs-primary-blue);"
+      ></div>
+      <span class="stories-color-color-label">--omrs-primary-blue</span>
+    </div>
+    <div class="stories-color-color">
+      <div
+        class="stories-color-rectangle"
+        style="background-color: var(--omrs-text-black);"
+      ></div>
+      <span class="stories-color-color-label">--omrs-text-black</span>
+    </div>
+    <div class="stories-color-color">
+      <div
+        class="stories-color-rectangle"
+        style="background-color: var(--omrs-inactive-grey);"
+      ></div>
+      <span class="stories-color-color-label">--omrs-inactive-grey</span>
+    </div>
+    <div class="stories-color-color">
+      <div
+        class="stories-color-rectangle"
+        style="background-color: var(--omrs-background-canvas);"
+      ></div>
+      <span class="stories-color-color-label">--omrs-background-canvas</span>
+    </div>
+  </div>
+  <h3>Code example</h3>
+  <div class="stories-example lang-html">
+    <!-- In your html -->
+    <div class="my-css-class">Some content in a div</div>
+  </div>
+  <div class="stories-example lang-css">
+    /* in a css file */ .my-css-class { background-color: var(<%- chosenColor
+    %>); color: white; width: 10rem; height: 4rem; }
+  </div>
+  <div class="my-css-class">
+    Some content in a div
+  </div>
+</article>
+<style>
+  .stories-color-page section {
+    margin: 16px 0;
+  }
+
+  .stories-color-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .stories-color-color {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+  }
+
+  .stories-color-rectangle {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+  }
+
+  .stories-color-color-label {
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .my-css-class {
+    background-color: var(<%- chosenColor %>);
+    color: white;
+    width: 10rem;
+    height: 4rem;
+  }
+</style>
