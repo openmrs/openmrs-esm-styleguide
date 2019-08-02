@@ -17,5 +17,7 @@ storiesOf("OpenMRS Styleguide", module).add("Colors", () => {
 
   const chosenColor = select("OpenMRS Color", options, defaultValue);
 
-  return htmlStory(ejs.render(html, { chosenColor }));
+  return htmlStory(
+    ejs.render(html, { chosenColor, colors: Object.entries(options) })
+  );
 });
