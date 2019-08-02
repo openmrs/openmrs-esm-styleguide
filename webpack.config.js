@@ -13,7 +13,11 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: ["style-loader", "postcss-loader"]
+        use: ["style-loader", "css-loader", "postcss-loader"]
+      },
+      {
+        test: /\.woff2?$/,
+        use: ["file-loader"]
       }
     ]
   },

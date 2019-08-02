@@ -28,4 +28,4 @@ deploy:
       branch: master
 after_deploy:
   - echo "Updating import map to point to new version of @openmrs/styleguide"
-  - curl -u $DEPLOYER_USERNAME:$DEPLOYER_PASSWORD -d '{ "service":"@openmrs/styleguide,"url":"https://spa-modules.nyc3.digitaloceanspaces.com/styleguide/'$TRAVIS_COMMIT'/styleguide.js" }' -X PATCH $DEPLOYER_HOST/services\?env=prod -H "Accept:application/json" -H "Content-Type:application/json" --fail
+  - curl -u $DEPLOYER_USERNAME:$DEPLOYER_PASSWORD -d '{ "service":"@openmrs/styleguide","url":"https://spa-modules.nyc3.digitaloceanspaces.com/styleguide/'$TRAVIS_COMMIT'/styleguide.js" }' -X PATCH $DEPLOYER_HOST/services\?env=prod -H "Accept:application/json" -H "Content-Type:application/json" --fail
