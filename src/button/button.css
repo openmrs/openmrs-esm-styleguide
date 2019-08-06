@@ -1,0 +1,93 @@
+/* "Unstyled" button css taken from https://gist.github.com/MoOx/9137295 */
+button.omrs-unstyled,
+input[type="submit"].omrs-unstyled,
+input[type="button"].omrs-unstyled {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  height: inherit;
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+button.omrs-unstyled:focus,
+input[type="submit"].omrs-unstyled:focus,
+input[type="button"].omrs-unstyled:focus {
+  /*
+    there's some 3rd party css that turns these off using !important, so the only way to override them is to also use important.
+    this is why you don't use !important -- it makes it hard for other people to override it when they need to :(
+  */
+  outline: solid !important;
+  outline-width: thin !important;
+  outline-color: var(--colorPrimary) !important;
+}
+
+button.omrs-filled,
+input[type="submit"].omrs-filled,
+input[type="button"].omrs-filled {
+  font-size: 0.875rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  letter-spacing: 0.03rem;
+  color: white;
+  height: 2.25rem;
+  border-radius: 0.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background: var(--omrs-primary-blue);
+  border-color: transparent;
+}
+
+button.omrs-filled.omrs-rounded,
+input[type="submit"].omrs-filled.omrs-rounded,
+input[type="button"].omrs-filled.omrs-rounded {
+  border-radius: 1.125rem;
+}
+
+button.omrs-outlined,
+input[type="submit"].omrs-outlined,
+input[type="button"].omrs-outlined {
+  height: 2.25rem;
+  letter-spacing: 0.0125rem;
+  color: var(--omrs-inactive-grey);
+  border: 0.0625rem solid var(--omrs-inactive-grey);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 0.25rem;
+  background: white;
+}
+
+button.omrs-outlined.omrs-rounded,
+input[type="submit"].omrs-outlined.omrs-rounded,
+input[type="button"].omrs-outlined.omrs-rounded {
+  border-width: 0.0625rem;
+  border-color: var(--omrs-inactive-grey);
+  border-radius: 1rem;
+}
+
+button.omrs-link,
+button.omrs-link,
+button.omrs-link {
+  letter-spacing: 0.014375rem;
+  color: var(--omrs-primary-blue);
+  min-height: 1.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border: none;
+  background: white;
+}
