@@ -39,36 +39,80 @@
       <div role="button" tabindex="0">Okay, but use omrs-unstyled instead</div>
     </div>
   </section>
-  <h3>Button types</h3>
-  <section class="button-examples">
-    <button class="omrs-filled">
-      Filled button
-    </button>
-    <button class="omrs-outlined">
-      Outlined button
-    </button>
-    <button class="omrs-link">
-      Link button
-    </button>
-    <button class="omrs-unstyled">
-      Unstyled button
-    </button>
-  </section>
-  <section class="button-examples">
-    <button class="omrs-filled omrs-rounded">
-      Filled button
-    </button>
-    <button class="omrs-outlined omrs-rounded">
-      Outlined button
-    </button>
-  </section>
+  <h3>Style types</h3>
+  <div>
+    <h4>Action Buttons</h4>
+    <section class="button-examples">
+      <button class="omrs-btn omrs-filled-action">
+        Filled button
+      </button>
+      <button class="omrs-btn omrs-outlined-action">
+        Outlined button
+      </button>
+      <button class="omrs-btn omrs-text-action">
+        Text button
+      </button>
+      <button class="omrs-btn omrs-filled-action omrs-rounded">
+        Rounded button
+      </button>
+    </section>
+  </div>
+  <div>
+    <h4>Neutral Buttons</h4>
+    <section class="button-examples">
+      <button class="omrs-btn omrs-filled-neutral">
+        Filled button
+      </button>
+      <button class="omrs-btn omrs-outlined-neutral">
+        Outlined button
+      </button>
+      <button class="omrs-btn omrs-text-neutral">
+        Text button
+      </button>
+      <button class="omrs-btn omrs-filled-neutral omrs-rounded">
+        Rounded button
+      </button>
+    </section>
+  </div>
+  <div>
+    <h4>Destructive Buttons</h4>
+    <section class="button-examples">
+      <button class="omrs-btn omrs-outlined-destructive">
+        Outlined button
+      </button>
+      <button class="omrs-btn omrs-text-destructive">
+        Text button
+      </button>
+      <button class="omrs-btn omrs-text-destructive omrs-rounded">
+        Text Rounded button
+      </button>
+    </section>
+  </div>
+  <div>
+    <h4>Disabled Buttons</h4>
+    <section class="button-examples">
+      <button class="omrs-btn omrs-filled-disabled" disabled>
+        Filled button
+      </button>
+      <button class="omrs-btn omrs-outlined-disabled" disabled>
+        Outlined button
+      </button>
+      <button class="omrs-btn omrs-text-disabled" disabled>
+        Text button
+      </button>
+    </section>
+  </div>
   <section>
     <h3>Code example:</h3>
-    <button class="<%- styleType %><% if(isRounded) { %> omrs-rounded<% } %>">
+    <button
+      class="<%= determineStyle(buttonType, styleType) %><% if(isRounded) { %> omrs-rounded<% } %>"
+    >
       A button
     </button>
     <div class="stories-example lang-html">
-      <button class="<%- styleType %><% if(isRounded) { %> omrs-rounded<% } %>">
+      <button
+        class="<%= determineStyle(buttonType, styleType) %><% if(isRounded) { %> omrs-rounded<% } %>"
+      >
         A button
       </button>
     </div>
