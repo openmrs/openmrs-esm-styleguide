@@ -1,10 +1,11 @@
 const path = require("path");
+const CleanWebpackPlugin = require("clean-webpack-plugin").CleanWebpackPlugin;
 
 module.exports = {
-  entry: path.resolve(__dirname, "src/styleguide.js"),
+  entry: path.resolve(__dirname, "src/openmrs-esm-styleguide.js"),
   output: {
     libraryTarget: "system",
-    filename: "styleguide.js",
+    filename: "openmrs-esm-styleguide.js",
     path: path.resolve(__dirname, "dist")
   },
   mode: "production",
@@ -27,5 +28,6 @@ module.exports = {
       "Access-Control-Allow-Origin": "*"
     }
   },
-  externals: [/^@openmrs\/.+$/, "react", "react-dom"]
+  externals: [/^@openmrs\/.+$/, "react", "react-dom"],
+  plugins: [new CleanWebpackPlugin()]
 };

@@ -6,8 +6,8 @@ script:
   - npm run build
   - npm run build-storybook -- --quiet
   - echo "Folder name in Digital Ocean Spaces - $TRAVIS_COMMIT"
-  - mkdir -p dist/styleguide/$TRAVIS_COMMIT
-  - mv dist/*.* dist/styleguide/$TRAVIS_COMMIT/
+  - mkdir -p dist/@openmrs/esm-styleguide/$TRAVIS_COMMIT
+  - mv dist/*.* dist/@openmrs/esm-styleguide/$TRAVIS_COMMIT/
 deploy:
   - provider: s3
     access_key_id: "$DIGITAL_OCEAN_SPACES_KEY_ID"
@@ -27,5 +27,5 @@ deploy:
     on:
       branch: master
 after_deploy:
-  - echo "Updating import map to point to new version of @openmrs/styleguide"
-  - curl -u $DEPLOYER_USERNAME:$DEPLOYER_PASSWORD -d '{ "service":"@openmrs/styleguide","url":"https://spa-modules.nyc3.digitaloceanspaces.com/styleguide/'$TRAVIS_COMMIT'/styleguide.js" }' -X PATCH $DEPLOYER_HOST/services\?env=prod -H "Accept:application/json" -H "Content-Type:application/json" --fail
+  - echo "Updating import map to point to new version of @openmrs/esm-styleguide"
+  - curl -u $DEPLOYER_USERNAME:$DEPLOYER_PASSWORD -d '{ "service":"@openmrs/esm-styleguide","url":"https://spa-modules.nyc3.digitaloceanspaces.com/@openmrs/esm-styleguide/'$TRAVIS_COMMIT'/openmrs-esm-styleguide.js" }' -X PATCH $DEPLOYER_HOST/services\?env=prod -H "Accept:application/json" -H "Content-Type:application/json" --fail
