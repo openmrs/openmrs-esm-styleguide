@@ -9,6 +9,7 @@
     "build-storybook": "build-storybook",
     "lint": "eslint src",
     "build": "webpack",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "browserslist": [
