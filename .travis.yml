@@ -3,8 +3,7 @@ node_js:
   - node
 script:
   - npm run lint
-  - npm run build
-  - npm run build-storybook -- --quiet
+  - npm run build - npm run build-storybook -- --quiet
   - echo "Folder name in Digital Ocean Spaces - $TRAVIS_COMMIT"
   - mkdir -p dist/@openmrs/esm-styleguide/$TRAVIS_COMMIT
   - mv dist/*.* dist/@openmrs/esm-styleguide/$TRAVIS_COMMIT/
@@ -24,6 +23,7 @@ deploy:
     skip_cleanup: true
     github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
     local_dir: storybook-static
+    fqdn: styleguide.openmrs.org
     on:
       branch: master
 after_deploy:
