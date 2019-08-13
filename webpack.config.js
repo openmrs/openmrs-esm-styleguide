@@ -6,6 +6,7 @@ module.exports = {
   output: {
     libraryTarget: "system",
     filename: "openmrs-esm-styleguide.js",
+    chunkFilename: "[name].js",
     path: path.resolve(__dirname, "dist")
   },
   mode: "production",
