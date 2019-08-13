@@ -9,6 +9,9 @@ storiesOf("OpenMRS Styleguide", module).add("Typography & Font", () => {
   const boldText = text("Bold text", "Bolded text");
   const italicText = text("Italic text", "Italic text");
   const underlinedText = text("Underlined text", "Underlined text");
+  const title1Text = text("Title 1 text", "Title 1 text");
 
-  return htmlStory(ejs.render(html, { boldText, italicText, underlinedText }));
+  return htmlStory(
+    ejs.render(html, { boldText, italicText, underlinedText, title1Text })
+  );
 });
