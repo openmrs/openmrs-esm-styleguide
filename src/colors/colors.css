@@ -1,7 +1,12 @@
 :root {
-  --omrs-primary-blue: #1a73e8;
-  --omrs-text-black: #212121;
-  --omrs-inactive-grey: #5f6369;
+  --omrs-primary-blue: #1e4bd1;
+  --omrs-text-black: #121212;
+  --omrs-inactive-grey: #3c3c43;
   --omrs-background-canvas: #fafafa;
-  --omrs-critical-alert-red: #e13332;
+  --omrs-critical-alert-red: #b50706;
+  --omrs-success-alert-green: #006800;
+  --omrs-warning-alert-brown: #6d5d01;
+  --omrs-interaction-plus-one: #193faf;
+  --omrs-interaction-minus-two: rgba(73, 133, 224, 0.12);
+  --omrs-ink-low-contrast: rgba(60, 60, 67, 0.3);
 }
