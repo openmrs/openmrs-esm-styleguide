@@ -1,4 +1,44 @@
 /* The default button styles */
+/* "Unstyled" button css taken from https://gist.github.com/MoOx/9137295 */
+button.omrs-unstyled,
+input[type="submit"].omrs-unstyled,
+input[type="button"].omrs-unstyled {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  height: inherit;
+  background: transparent;
+
+  /* inherit font & color from ancestor */
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+
+  /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+  line-height: normal;
+
+  /* Corrects font smoothing for webkit */
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+
+  /* Corrects inability to style clickable `input` types in iOS */
+  -webkit-appearance: none;
+}
+
+button.omrs-unstyled:focus,
+input[type="submit"].omrs-unstyled:focus,
+input[type="button"].omrs-unstyled:focus {
+  /*
+    there's some 3rd party css that turns these off using !important, so the only way to override them is to also use important.
+    this is why you don't use !important -- it makes it hard for other people to override it when they need to :(
+  */
+  outline: solid !important;
+  outline-width: thin !important;
+  outline-color: var(--colorPrimary) !important;
+}
+
 button.omrs-btn,
 input[type="submit"].omrs-btn,
 input[type="button"].omrs-btn {
@@ -14,9 +54,10 @@ input[type="button"].omrs-btn {
   white-space: nowrap;
   border-radius: 0.25rem;
   padding: 0.75rem 1.5rem;
+  height: 2.25rem;
 }
 
-button.omrs-btn > i,
+button.omrs-btn svg,
 input[type="submit"].omrs-btn > i,
 input[type="button"].omrs-btn > i {
   margin: 0 0.5rem;
@@ -184,7 +225,7 @@ input[type="button"].omrs-outlined-disabled {
 button.omrs-rounded,
 input[type="submit"].omrs-rounded,
 input[type="button"].omrs-rounded {
-  border-radius: 100px;
+  border-radius: 6.25rem;
 }
 
 /* Button Sizes */
@@ -192,13 +233,13 @@ input[type="button"].omrs-rounded {
 button.omrs-rounded-lg,
 input[type="submit"].omrs-rounded-lg,
 input[type="button"].omrs-rounded-lg {
-  border-radius: 100px;
-  padding: 24px 130px;
+  border-radius: 6.25rem;
+  height: 3.5rem;
 }
 
 button.omrs-btn-lg,
 input[type="submit"].omrs-btn-lg,
 input[type="button"].omrs-btn-lg {
-  border-radius: 8px;
-  padding: 24px 130px;
+  border-radius: 0.5rem;
+  height: 3.5rem;
 }
