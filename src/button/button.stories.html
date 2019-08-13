@@ -105,13 +105,13 @@
   <section>
     <h3>Code example:</h3>
     <button
-      class="<%= determineStyle(buttonType, styleType) %><% if(isRounded) { %> omrs-rounded<% } %>"
+      class="<%= determineStyle(buttonType, styleType, isRounded, isLarge) %>"
     >
       A button
     </button>
     <div class="stories-example lang-html">
       <button
-        class="<%= determineStyle(buttonType, styleType) %><% if(isRounded) { %> omrs-rounded<% } %>"
+        class="<%= determineStyle(buttonType, styleType, isRounded, isLarge) %>"
       >
         A button
       </button>

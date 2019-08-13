@@ -30,14 +30,30 @@ storiesOf("OpenMRS Styleguide", module).add("Buttons", () => {
 
   const isRounded = boolean("Rounded", false);
 
-  const determineStyle = (buttonType, styleType) => {
+  const isLarge = boolean("Large", false);
+
+  const determineStyle = (buttonType, styleType, isRounded, isLarge) => {
+    let styles = `omrs-btn`;
     if (buttonType === "unstyled") {
       return `omrs-unstyled`;
-    } else {
-      return `omrs-btn omrs-${buttonType}-${styleType}`;
     }
+    styles = `${styles} omrs-${buttonType}-${styleType}`;
+    if (!isRounded && isLarge) {
+      return `${styles} omrs-btn-lg`;
+    } else if (isRounded && !isLarge) {
+      return `${styles} omrs-rounded`;
+    } else if (isRounded && isLarge) {
+      return `${styles} omrs-rounded-lg`;
+    }
+    return styles;
   };
   return htmlStory(
-    ejs.render(html, { determineStyle, buttonType, styleType, isRounded })
+    ejs.render(html, {
+      determineStyle,
+      buttonType,
+      styleType,
+      isRounded,
+      isLarge
+    })
   );
 });
