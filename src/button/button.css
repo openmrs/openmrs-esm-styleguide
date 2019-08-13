@@ -73,7 +73,7 @@ input[type="submit"].omrs-btn:focus,
 input[type="button"].omrs-btn:focus {
   outline: solid !important;
   outline-width: thin !important;
-  outline-color: var(--omrs-primary-blue);
+  outline-color: var(--omrs-color-interaction);
 }
 
 /* Filled Square Button Styles */
@@ -81,14 +81,14 @@ input[type="button"].omrs-btn:focus {
 button.omrs-filled-action,
 input[type="submit"].omrs-filled-action,
 input[type="button"].omrs-filled-action {
-  background: var(--omrs-primary-blue);
+  background: var(--omrs-color-interaction);
   color: white;
 }
 
 button.omrs-filled-action:hover,
 input[type="submit"].omrs-filled-action:hover,
 input[type="button"].omrs-filled-action:hover {
-  background: var(--omrs-interaction-plus-one);
+  background: var(--omrs-color-interaction-plus-one);
   color: white;
 }
 
@@ -96,7 +96,7 @@ button.omrs-filled-neutral,
 input[type="submit"].omrs-filled-neutral,
 input[type="button"].omrs-filled-neutral {
   background: rgba(73, 133, 224, 0.2);
-  color: var(--omrs-primary-blue);
+  color: var(--omrs-color-interaction);
 }
 
 button.omrs-filled-disabled,
@@ -111,19 +111,19 @@ input[type="button"].omrs-filled-disabled {
 button.omrs-text-action,
 input[type="submit"].omrs-text-action,
 input[type="button"].omrs-text-action {
-  color: var(--omrs-primary-blue);
+  color: var(--omrs-color-interaction);
 }
 
 button.omrs-text-action:hover,
 input[type="submit"].omrs-text-action:hover,
 input[type="button"].omrs-text-action:hover {
-  background-color: var(--omrs-interaction-minus-two);
+  background-color: var(--omrs-color-interaction-minus-two);
 }
 
 button.omrs-text-destructive,
 input[type="submit"].omrs-text-destructive,
 input[type="button"].omrs-text-destructive {
-  color: var(--omrs-critical-alert-red);
+  color: var(--omrs-color-danger);
 }
 
 button.omrs-text-destructive:hover,
@@ -141,7 +141,7 @@ input[type="button"].omrs-text-neutral {
 button.omrs-text-neutral > i,
 input[type="submit"].omrs-text-neutral > i,
 input[type="button"].omrs-text-neutral > i {
-  color: var(--omrs-primary-blue);
+  color: var(--omrs-color-interaction);
 }
 
 button.omrs-text-neutral:hover,
@@ -153,7 +153,7 @@ input[type="button"].omrs-text-neutral:hover {
 button.omrs-text-disabled,
 input[type="submit"].omrs-text-disabled,
 input[type="button"].omrs-text-disabled {
-  color: var(--omrs-ink-low-contrast);
+  color: var(--omrs-color-ink-low-contrast);
 }
 
 /* Outlined Buttons */
@@ -174,33 +174,33 @@ input[type="button"].omrs-outlined-neutral:hover {
 button.omrs-outlined-action,
 input[type="submit"].omrs-outlined-action,
 input[type="button"].omrs-outlined-action {
-  color: var(--omrs-primary-blue);
+  color: var(--omrs-color-interaction);
 }
 
 button.omrs-outlined-action:hover,
 input[type="submit"].omrs-outlined-action:hover,
 input[type="button"].omrs-outlined-action:hover {
-  background: var(--omrs-interaction-minus-two);
-  color: var(--omrs-primary-blue);
+  background: var(--omrs-color-interaction-minus-two);
+  color: var(--omrs-color-interaction);
 }
 
 button.omrs-outlined-destructive,
 input[type="submit"].omrs-outlined-destructive,
 input[type="button"].omrs-outlined-destructive {
-  color: var(--omrs-critical-alert-red);
+  color: var(--omrs-color-danger);
 }
 
 button.omrs-outlined-destructive:hover,
 input[type="submit"].omrs-outlined-destructive:hover,
 input[type="button"].omrs-outlined-destructive:hover {
   background-color: #f8eaea;
-  color: var(--omrs-critical-alert-red);
+  color: var(--omrs-color-danger);
 }
 
 button.omrs-outlined-disabled,
 input[type="submit"].omrs-outlined-disabled,
 input[type="button"].omrs-outlined-disabled {
-  color: var(--omrs-ink-low-contrast);
+  color: var(--omrs-color-ink-low-contrast);
 }
 
 /*setting border color for all outlined buttons*/
@@ -217,7 +217,7 @@ input[type="button"].omrs-outlined-action,
 button.omrs-outlined-disabled,
 input[type="submit"].omrs-outlined-disabled,
 input[type="button"].omrs-outlined-disabled {
-  border: 1px solid var(--omrs-ink-low-contrast);
+  border: 1px solid var(--omrs-color-ink-low-contrast);
 }
 
 /* Rounded Button  */

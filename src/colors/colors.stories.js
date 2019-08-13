@@ -7,14 +7,45 @@ import ejs from "ejs";
 
 storiesOf("OpenMRS Styleguide", module).add("Colors", () => {
   const options = {
-    "Primary blue": "--omrs-primary-blue",
-    "Text black": "--omrs-text-black",
-    "Inactive grey": "--omrs-inactive-grey",
-    "Background canvas": "--omrs-background-canvas",
-    "Critical alert red": "--omrs-critical-alert-red"
+    "Primary blue": "--omrs-color-primary-blue",
+    "Text black": "--omrs-color-text-black",
+    "Inactive grey": "--omrs-color-inactive-grey",
+    "Inactive grey two": "--omrs-color-inactive-grey-two",
+    "Background canvas": "--omrs-color-background-canvas",
+    "Critical alert red": "--omrs-color-critical-alert-red",
+
+    "Background high contrast": "--omrs-color-bg-high-contrast",
+    "Background medium contrast": "--omrs-color-bg-medium-contrast",
+    "Background low contrast": "--omrs-color-bg-low-contrast",
+    "Background lowest contrast": "--omrs-color-bg-lowest-contrast",
+
+    "Ink high contrast": "--omrs-color-ink-high-contrast",
+    "Ink medium contrast": "--omrs-color-ink-medium-contrast",
+    "Ink low contrast": "--omrs-color-ink-low-contrast",
+    "Ink lowest contrast": "--omrs-color-ink-lowest-contrast",
+    "Ink white": "--omrs-color-ink-white",
+
+    "Interaction plus two": "--omrs-color-interaction-plus-two",
+    "Interaction plus one": "--omrs-color-interaction-plus-one",
+    Interaction: "--omrs-color-interaction",
+    "Interaction minus one": "--omrs-color-interaction-minus-one",
+    "interaction minus two": "--omrs-color-interaction-minus-two",
+
+    Success: "--omrs-color-success",
+    "Success two": "--omrs-color-success-two",
+    Warning: "--omrs-color-warning",
+    "Warning two": "--omrs-color-warning-two",
+    Danger: "--omrs-color-danger",
+    "Danger two": "--omrs-color-danger-two",
+
+    "Color brand orange": "--omrs-color-brand-orange",
+    "Color brand violet": "--omrs-color-brand-violet",
+    "Color brand gold": "--omrs-color-brand-gold",
+    "Color brand teal": "--omrs-color-brand-teal",
+    "Color brand black": "--omrs-color-brand-black"
   };
 
-  const defaultValue = "--omrs-primary-blue";
+  const defaultValue = "--omrs-color-primary-blue";
 
   const chosenColor = select("OpenMRS Color", options, defaultValue);
 
