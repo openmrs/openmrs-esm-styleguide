@@ -5,3 +5,4 @@ import "./typography/typography.css";
 import "./spacing/spacing.css";
 import "./cards/cards.css";
 import "./button/button.css";
+import "./logo/logo.js";

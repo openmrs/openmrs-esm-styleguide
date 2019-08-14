@@ -1,5 +1,7 @@
 const path = require("path");
 
+const styleguideWebpackConfig = require("../webpack.config.js");
+
 module.exports = async ({ config }) => {
   if (!config.resolve) {
     config.resolve = {
@@ -10,6 +12,8 @@ module.exports = async ({ config }) => {
     __dirname,
     "../node_modules/ejs/ejs.js"
   );
+
+  config.module.rules = styleguideWebpackConfig.module.rules;
 
   return config;
 };
