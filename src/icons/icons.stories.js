@@ -2,11 +2,11 @@ import { storiesOf } from "@storybook/html";
 import { htmlStory } from "../story-helpers";
 import ejs from "ejs";
 import html from "./icons.stories.html";
-import { radios } from "@storybook/addon-knobs";
+import { select } from "@storybook/addon-knobs";
 import "./icons.js";
 
 storiesOf("OpenMRS Styleguide", module).add("Icons", () => {
-  const iconChoice = radios(
+  const iconChoice = select(
     "Icon",
     {
       Visibility: "visibility"

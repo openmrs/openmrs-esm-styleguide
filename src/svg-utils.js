@@ -3,6 +3,8 @@
  * <svg role="img">
  *   <use link:href="#the-svg-id"></use>
  * </svg>
+ *
+ * This approach is known as "svg sprites"
  */
 const svgContainer = document.createElement("div");
 svgContainer.id = "omrs-svgs-container";
