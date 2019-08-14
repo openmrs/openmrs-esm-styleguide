@@ -15,12 +15,52 @@ body {
   text-decoration: underline;
 }
 
+.omrs-type-title {
+  font-style: normal;
+  font-weight: bold;
+  color: var(--omrs-color-brand-black);
+}
+
 .omrs-type-title-1 {
   font-style: normal;
   font-weight: bold;
   font-size: 2.125rem;
   line-height: 113.8%;
   letter-spacing: 0.023rem;
+}
+
+.omrs-type-title-2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.875rem;
+  line-height: 121.5%;
+  letter-spacing: 0.054rem;
+  color: var(--omrs-color-brand-black);
+}
+
+.omrs-type-title-3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.688rem;
+  line-height: 125%;
+  letter-spacing: 0.05rem;
+  color: var(--omrs-color-brand-black);
+}
+
+.omrs-type-title-4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 129.6%;
+  letter-spacing: 0.047rem;
+  color: var(--omrs-color-brand-black);
+}
+
+.omrs-type-title-5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.375rem;
+  line-height: 129%;
   color: var(--omrs-color-brand-black);
 }
 
