@@ -49,7 +49,7 @@ body {
 
 .omrs-type-title-4 {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.5rem;
   line-height: 129.6%;
   letter-spacing: 0.047rem;
@@ -58,7 +58,7 @@ body {
 
 .omrs-type-title-5 {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.375rem;
   line-height: 129%;
   color: var(--omrs-color-brand-black);
