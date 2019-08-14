@@ -20,6 +20,10 @@ module.exports = {
       {
         test: /\.woff2?$/,
         use: ["file-loader"]
+      },
+      {
+        test: /\.(svg|html)$/,
+        use: ["raw-loader"]
       }
     ]
   },
