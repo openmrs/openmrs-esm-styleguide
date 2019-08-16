@@ -9,7 +9,15 @@ storiesOf("OpenMRS Styleguide", module).add("Icons", () => {
   const iconChoice = select(
     "Icon",
     {
-      Visibility: "visibility"
+      Visibility: "visibility",
+      Menu: "menu",
+      Search: "search",
+      "Arrow back": "arrow-back",
+      "Arrow downward": "arrow-downward",
+      "Arrow upward": "arrow-upward",
+      "Chevron left": "chevron-left",
+      "Chevron right": "chevron-right",
+      "Supervised user circle": "supervised-user-circle"
     },
     "visibility"
   );
