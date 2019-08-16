@@ -14,6 +14,9 @@ storiesOf("OpenMRS Styleguide", module).add("Typography & Font", () => {
   const title3Text = text("Title 3 text", "Title 3 text");
   const title4Text = text("Title 4 text", "Title 4 text");
   const title5Text = text("Title 5 text", "Title 5 text");
+  const bodyLargeText = text("Body large text", "Body large text");
+  const bodyRegularText = text("Body regular text", "Body regular text");
+  const bodySmallText = text("Body small text", "Body small text");
 
   return htmlStory(
     ejs.render(html, {
@@ -24,7 +27,10 @@ storiesOf("OpenMRS Styleguide", module).add("Typography & Font", () => {
       title2Text,
       title3Text,
       title4Text,
-      title5Text
+      title5Text,
+      bodyLargeText,
+      bodyRegularText,
+      bodySmallText
     })
   );
 });

@@ -6,8 +6,9 @@
       href="https://fonts.google.com/specimen/Roboto?selection.family=Roboto"
       rel="noopener"
       >Roboto font</a
-    >. All text uses this font and no css classes are needed to apply the font
-    to your html.
+    >. Roboto font will serve as the default font for all text and no css
+    classes are needed to apply the font to your html. Merriweather will serve
+    as the serif font option (see below for how details).
   </section>
   <section>
     <h3>Code example: Font</h3>
@@ -21,7 +22,20 @@
     </div>
   </section>
   <section>
-    <h3>Code examples: text decoration</h3>
+    <h3>Code example: Serif</h3>
+    <p>OpenMRS uses merriweather for serif style.</p>
+    <p class="omrs-type-serif">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    <div class="stories-example lang-html">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h3>Code examples: Text Decoration</h3>
     <div class="omrs-bold"><%- boldText %></div>
     <div class="stories-example lang-html">
       <div class="omrs-bold"><%- boldText %></div>
@@ -60,6 +74,24 @@
     <div class="omrs-type-title-5"><%- title5Text %></div>
     <div class="stories-example lang-html">
       <div class="omrs-type-title-5"><%-title5Text %></div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Code examples: Body</h3>
+    <div class="omrs-type-body-large"><%- bodyLargeText %></div>
+    <div class="stories-example lang-html">
+      <div class="omrs-type-body-large"><%- bodyLargeText %></div>
+    </div>
+
+    <div class="omrs-type-body-regular"><%- bodyRegularText %></div>
+    <div class="stories-example lang-html">
+      <div class="omrs-type-body-regular"><%- bodyRegularText %></div>
+    </div>
+
+    <div class="omrs-type-body-small"><%- bodySmallText %></div>
+    <div class="stories-example lang-html">
+      <div class="omrs-type-body-small"><%- bodySmallText %></div>
     </div>
   </section>
 </article>
