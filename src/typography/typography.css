@@ -84,14 +84,6 @@ body {
   color: var(--omrs-color-brand-black);
 }
 
-.omrs-type-body-serif {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 1.0625;
-  line-height: 147.6%;
-  color: var(--omrs-color-brand-black);
-}
-
 .omrs-type-body-small {
   font-style: normal;
   font-weight: normal;
