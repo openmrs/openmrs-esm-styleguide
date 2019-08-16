@@ -1,12 +1,22 @@
 <article class="stories-icons">
   <h2>Icons</h2>
   <section>
-    <div>
-      <div>omrs-icon-visibility</div>
-      <svg class="omrs-icon" role="img">
-        <use xlink:href="#omrs-icon-visibility"></use>
-      </svg>
-    </div>
+    <table>
+      <% for (var i = 0; i < iconNames.length; i++) { %>
+      <tr>
+        <div>
+          <td>
+            omrs-icon-<%- iconNames[i] %>
+          </td>
+          <td>
+            <svg class="omrs-icon" role="img">
+              <use xlink:href="#omrs-icon-<%- iconNames[i] %>"></use>
+            </svg>
+          </td>
+        </div>
+      </tr>
+      <% } %>
+    </table>
   </section>
   <section>
     <h3>Code example:</h3>
