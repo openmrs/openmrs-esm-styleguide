@@ -1,65 +1,22 @@
 <article class="stories-icons">
   <h2>Icons</h2>
   <section>
-    <div>
-      <div>omrs-icon-visibility</div>
-      <svg class="omrs-icon" role="img">
-        <use xlink:href="#omrs-icon-visibility"></use>
-      </svg>
-    </div>
-    <div>
-      <div>omrs-icon-menu</div>
-      <svg class="omrs-icon" role="img">
-        <use xlink:href="#omrs-icon-menu"></use>
-      </svg>
-    </div>
-    <div>
-      <div>omrs-icon-search</div>
-      <svg class="omrs-icon" role="img">
-        <use xlink:href="#omrs-icon-search"></use>
-      </svg>
-    </div>
-    <div>
-      <div>omrs-icon-arrow-back</div>
-      <svg class="omrs-icon" role="img">
-        <use xlink:href="#omrs-icon-arrow-back"></use>
-      </svg>
-    </div>
-
-    <div>
-      <div>omrs-icon-arrow-downward</div>
-      <svg class="omrs-icon" role="img">
-        <use xlink:href="#omrs-icon-arrow-downward"></use>
-      </svg>
-    </div>
-
-    <div>
-      <div>omrs-icon-arrow-upward</div>
-      <svg class="omrs-icon" role="img">
-        <use xlink:href="#omrs-icon-arrow-upward"></use>
-      </svg>
-    </div>
-
-    <div>
-      <div>omrs-icon-chevron-left</div>
-      <svg class="omrs-icon" role="img">
-        <use xlink:href="#omrs-icon-chevron-left"></use>
-      </svg>
-    </div>
-
-    <div>
-      <div>omrs-icon-chevron-right</div>
-      <svg class="omrs-icon" role="img">
-        <use xlink:href="#omrs-icon-chevron-right"></use>
-      </svg>
-    </div>
-
-    <div>
-      <div>omrs-icon-supervised-user-circle</div>
-      <svg class="omrs-icon" role="img">
-        <use xlink:href="#omrs-icon-supervised-user-circle"></use>
-      </svg>
-    </div>
+    <table>
+      <% for (var i = 0; i < iconNames.length; i++) { %>
+      <tr>
+        <div>
+          <td>
+            omrs-icon-<%- iconNames[i] %>
+          </td>
+          <td>
+            <svg class="omrs-icon" role="img">
+              <use xlink:href="#omrs-icon-<%- iconNames[i] %>"></use>
+            </svg>
+          </td>
+        </div>
+      </tr>
+      <% } %>
+    </table>
   </section>
   <section>
     <h3>Code example:</h3>
