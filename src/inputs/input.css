@@ -47,9 +47,9 @@ input.omrs-input-outlined ~ label {
   position: absolute;
   pointer-events: none;
   top: 1.25rem;
+  left: 0.875rem;
   transition: 0.2s ease all;
-  padding-left: 0.875rem;
-  letter-spacing: 0.44px;
+  letter-spacing: 0.0275rem;
   color: var(--omrs-color-ink-medium-contrast);
 }
 
@@ -120,32 +120,31 @@ input.omrs-input-danger ~ span.omrs-input-helper {
   color: var(--omrs-color-danger);
 }
 
-input.omrs-input-danger ~ svg {
+input.omrs-input-danger ~ button > svg {
   fill: var(--omrs-color-danger);
 }
 
-input.omrs-input-underlined:disabled ~ svg,
-input.omrs-input-filled:disabled ~ svg,
-input.omrs-input-outlined:disabled ~ svg {
+input.omrs-input-underlined:disabled ~ button > svg,
+input.omrs-input-filled:disabled ~ button > svg,
+input.omrs-input-outlined:disabled ~ button > svg {
   fill: var(--omrs-color-ink-low-contrast);
 }
 
-input.omrs-input-underlined ~ svg,
-input.omrs-input-filled ~ svg,
-input.omrs-input-outlined ~ svg {
+input.omrs-input-underlined ~ button > svg,
+input.omrs-input-filled ~ button > svg,
+input.omrs-input-outlined ~ button > svg {
   position: absolute;
-  vertical-align: middle;
   top: 1rem;
   right: 0.875rem;
   fill: grey;
 }
 
-input.omrs-input-underlined:focus:not(.omrs-input-danger) ~ svg,
-input.omrs-input-filled:focus:not(.omrs-input-danger) ~ svg {
+input.omrs-input-underlined:focus:not(.omrs-input-danger) ~ button > svg,
+input.omrs-input-filled:focus:not(.omrs-input-danger) ~ button > svg {
   fill: var(--omrs-color-ink-high-contrast);
 }
 
-input.omrs-input-danger ~ svg {
+input.omrs-input-danger ~ button > svg {
   fill: var(--omrs-color-danger);
 }
 
