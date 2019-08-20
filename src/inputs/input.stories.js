@@ -16,13 +16,11 @@ storiesOf("OpenMRS Styleguide", module).add("Inputs", () => {
     "outlined"
   );
 
-  const isDanger = boolean("is Danger", false);
+  const isDanger = boolean("Is Danger", false);
 
-  const determineStyle = (inputType, isDanger) => {
-    let styles = `omrs-input-${inputType}`;
-    isDanger ? (styles = `${styles} omrs-input-danger`) : "";
-    return styles;
-  };
+  const determineStyle = (inputType, isDanger) =>
+    `omrs-input-${inputType} ${isDanger ? "omrs-input-danger" : ""}`.trim();
+
   return htmlStory(
     ejs.render(html, {
       determineStyle,
