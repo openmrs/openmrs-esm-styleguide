@@ -7,3 +7,4 @@ import "./cards/cards.css";
 import "./button/button.css";
 import "./logo/logo.js";
 import "./icons/icons.js";
+import "./inputs/input.css";
