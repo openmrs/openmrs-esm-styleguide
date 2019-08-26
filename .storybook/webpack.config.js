@@ -1,7 +1,6 @@
 const path = require("path");
 
 const styleguideWebpackConfig = require("../webpack.config.js");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = async ({ config }) => {
   if (!config.resolve) {
@@ -15,7 +14,7 @@ module.exports = async ({ config }) => {
   );
 
   config.module.rules = styleguideWebpackConfig.module.rules;
-  config.plugins.push(new MiniCssExtractPlugin());
+  config.plugins = config.plugins.concat(...styleguideWebpackConfig.plugins);
 
   return config;
 };
