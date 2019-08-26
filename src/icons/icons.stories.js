@@ -4,6 +4,7 @@ import ejs from "ejs";
 import html from "./icons.stories.html";
 import { select } from "@storybook/addon-knobs";
 import "./icons.js";
+import { options } from "../colors/colors.stories";
 
 storiesOf("OpenMRS Styleguide", module).add("Icons", () => {
   const icons = {
@@ -21,7 +22,13 @@ storiesOf("OpenMRS Styleguide", module).add("Icons", () => {
 
   const iconChoice = select("Icon", icons, "visibility");
 
+  const colorOptions = Object.assign({ Default: "default" }, options);
+
+  const color = select("Color", colorOptions, "default");
+
+  const fill = color === "default" ? "" : ` fill="var(${color})"`;
+
   const href = `#omrs-icon-${iconChoice}`;
 
-  return htmlStory(ejs.render(html, { href, iconNames }));
+  return htmlStory(ejs.render(html, { href, iconNames, fill }));
 });
