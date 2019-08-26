@@ -63,7 +63,5 @@
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.8.0"
   },
-  "dependencies": {
-    "systemjs": "git+https://github.com/systemjs/systemjs.git#6.x"
-  }
+  "dependencies": {}
 }
