@@ -79,7 +79,9 @@ input[type="button"].omrs-btn {
 }
 
 a.omrs-link {
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-decoration: none;
 }
 
