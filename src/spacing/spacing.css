@@ -1,8 +1,7 @@
 /* See https://docs.google.com/presentation/d/1YqMMW0Cq5siE_9FG-ipWTzF73KToIw7ewmr1Y8VAjJ8/edit#slide=id.g5bf07c575d_0_0
 */
 
-html,
-body {
+* {
   box-sizing: border-box;
 }
 
