@@ -1,5 +1,6 @@
 const path = require("path");
 const CleanWebpackPlugin = require("clean-webpack-plugin").CleanWebpackPlugin;
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: path.resolve(__dirname, "src/openmrs-esm-styleguide.js"),
@@ -15,7 +16,11 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader", "postcss-loader"]
+        use: [
+          { loader: MiniCssExtractPlugin.loader },
+          "css-loader",
+          "postcss-loader"
+        ]
       },
       {
         test: /\.woff2?$/,
@@ -34,5 +39,5 @@ module.exports = {
     }
   },
   externals: [/^@openmrs\/.+$/, "react", "react-dom"],
-  plugins: [new CleanWebpackPlugin()]
+  plugins: [new CleanWebpackPlugin(), new MiniCssExtractPlugin({})]
 };

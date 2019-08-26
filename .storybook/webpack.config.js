@@ -14,6 +14,7 @@ module.exports = async ({ config }) => {
   );
 
   config.module.rules = styleguideWebpackConfig.module.rules;
+  config.plugins = config.plugins.concat(...styleguideWebpackConfig.plugins);
 
   return config;
 };
