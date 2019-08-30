@@ -1,3 +1,4 @@
+/* Remove shadow in ios inputs */
 textarea,
 input[type="text"] {
   -webkit-appearance: none;
