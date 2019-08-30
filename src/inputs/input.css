@@ -170,3 +170,7 @@ input.omrs-input-filled:focus:not(.omrs-input-danger),
 input.omrs-input-outlined:focus:not(.omrs-input-danger) {
   border-color: var(--omrs-color-interaction);
 }
+
+input.omrs-input-outlined:focus {
+  border-width: 0.125rem;
+}
