@@ -4,3 +4,5 @@
 The styleguide for OpenMRS
 
 [Documentation website](http://styleguide.openmrs.org/?path=/story/openmrs-styleguide--buttons)
+
+[Wiki page](https://wiki.openmrs.org/display/projects/openmrs-esm-styleguide)
