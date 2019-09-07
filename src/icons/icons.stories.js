@@ -2,7 +2,7 @@ import { storiesOf } from "@storybook/html";
 import { htmlStory } from "../story-helpers";
 import ejs from "ejs";
 import html from "./icons.stories.html";
-import { select } from "@storybook/addon-knobs";
+import { select, text } from "@storybook/addon-knobs";
 import "./icons.js";
 import { options } from "../colors/colors.stories";
 
@@ -30,5 +30,7 @@ storiesOf("OpenMRS Styleguide", module).add("Icons", () => {
 
   const href = `#omrs-icon-${iconChoice}`;
 
-  return htmlStory(ejs.render(html, { href, iconNames, fill }));
+  const size = text("Icon size (1rem = 16px)", "1.5");
+
+  return htmlStory(ejs.render(html, { href, iconNames, fill, size }));
 });

@@ -21,12 +21,14 @@
   <section>
     <h3>Code example:</h3>
     <svg class="omrs-icon" <%- fill %>
-      >
+      <% if (size !== '1.5') { %>style="height: <%- size %>rem; width: <%- size
+      %>rem"<% } %> >
       <use xlink:href="<%- href %>"></use>
     </svg>
     <div class="stories-example lang-html">
       <svg class="omrs-icon" <%- fill %>
-        >
+        <% if (size !== '1.5') { %>style="height: <%- size %>rem; width: <%-
+        size %>rem"<% } %> >
         <use xlink:href="<%- href %>"></use>
       </svg>
     </div>
