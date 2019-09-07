@@ -32,9 +32,13 @@ export function htmlStory(html) {
       exampleDiv.innerHTML = copyCodeBlock(innerHTML, { lang: "xml", colors });
     } else if (exampleDiv.classList.contains("lang-css")) {
       exampleDiv.innerHTML = copyCodeBlock(innerHTML, { lang: "css", colors });
+    } else if (exampleDiv.classList.contains("lang-js")) {
+      exampleDiv.innerHTML = copyCodeBlock(innerHTML, { lang: "js", colors });
+    } else if (exampleDiv.classList.contains("lang-bash")) {
+      exampleDiv.innerHTML = copyCodeBlock(innerHTML, { lang: "bash", colors });
     } else {
       throw Error(
-        "stories-example divs must have either lang-html or lang-css on them"
+        "stories-example divs must have either lang-html, lang-css, lang-js, or lang-bash on them"
       );
     }
   });
