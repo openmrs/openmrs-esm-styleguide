@@ -1,32 +1,13 @@
-.omrs-btn-icon-medium:disabled svg {
-  fill: var(--omrs-color-ink-low-contrast);
-  width: 24px;
-  height: 24px;
-}
-.omrs-btn-icon-medium svg {
-  fill: var(--omrs-color-primary-blue);
-  width: 524px;
-  height: 54px;
-}
-z .omrs-btn-icon-medium {
+.omrs-btn-icon-medium {
   width: 24px;
   height: 24px;
   text-align: center !important;
   background: transparent;
   border: none !important;
   font-size: 0;
+  text-align: center;
 }
 
-.omrs-btn-icon-large:disabled svg {
-  fill: var(--omrs-color-ink-low-contrast);
-  width: 32px;
-  height: 32px;
-}
-.omrs-btn-icon-large svg {
-  fill: var(--omrs-color-primary-blue);
-  width: 52px;
-  height: 32px;
-}
 .omrs-btn-icon-large {
   width: 32px;
   height: 32px;
@@ -34,4 +15,46 @@ z .omrs-btn-icon-medium {
   background: transparent;
   border: none !important;
   font-size: 0;
+}
+
+.omrs-btn-icon-medium:hover:enabled {
+  border-radius: 16px;
+  background-color: rgba(73, 133, 224, 0.12);
+}
+
+.omrs-btn-icon-large:hover:enabled {
+  border-radius: 16px;
+  background-color: rgba(73, 133, 224, 0.12);
+}
+
+.omrs-btn-icon-large svg {
+  fill: var(--omrs-color-primary-blue);
+  width: 32px;
+  height: 32px;
+}
+
+.omrs-btn-icon-medium svg {
+  fill: var(--omrs-color-primary-blue);
+  width: 24px;
+  height: 24px;
+}
+
+.omrs-btn-icon-medium:disabled svg {
+  fill: var(--omrs-color-ink-low-contrast);
+  width: 24px;
+  height: 24px;
+}
+
+.omrs-btn-icon-large:disabled svg {
+  fill: var(--omrs-color-ink-low-contrast);
+  width: 32px;
+  height: 32px;
+}
+
+.omrs-btn-icon-medium:disabled {
+  cursor: not-allowed;
+}
+
+.omrs-btn-icon-large:disabled {
+  cursor: not-allowed;
 }
