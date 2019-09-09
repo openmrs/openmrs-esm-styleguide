@@ -10,7 +10,7 @@
     "lint": "eslint src",
     "build": "webpack",
     "prepublishOnly": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "browserslist": [
     "extends browserslist-config-openmrs"
@@ -40,6 +40,7 @@
     "@storybook/addon-a11y": "^5.1.9",
     "@storybook/addon-knobs": "^5.1.9",
     "@storybook/html": "^5.1.9",
+    "@types/jest": "^24.0.18",
     "autoprefixer": "^9.6.1",
     "babel-eslint": "^11.0.0-beta.0",
     "babel-loader": "^8.0.6",
@@ -54,6 +55,8 @@
     "file-loader": "^4.2.0",
     "highlight.js": "^9.15.9",
     "husky": "^3.0.0",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
     "mini-css-extract-plugin": "^0.8.0",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.18.2",
