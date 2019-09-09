@@ -23,7 +23,7 @@
 }
 
 .omrs-btn-icon-large:hover:enabled {
-  border-radius: 20px;
+  border-radius: 1.5rem;
   background-color: rgba(73, 133, 224, 0.12);
 }
 
@@ -41,9 +41,6 @@
   fill: var(--omrs-color-primary-blue);
   width: 1.5rem;
   height: 1.5rem;
-}
-
-.omrs-btn-icon-filled-medium {
 }
 
 .omrs-btn-icon-medium:disabled svg {
