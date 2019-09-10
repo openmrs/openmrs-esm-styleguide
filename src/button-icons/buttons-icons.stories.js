@@ -2,7 +2,6 @@ import { storiesOf } from "@storybook/html";
 import html from "./buttons-icons.stories.html";
 import "./button-icons.css";
 import ejs from "ejs";
-import { text, withKnobs } from "@storybook/addon-knobs";
 import { htmlStory } from "../story-helpers";
 import { select } from "@storybook/addon-knobs";
 
