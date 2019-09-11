@@ -39,4 +39,20 @@ describe("svgs", () => {
       }
     });
   });
+
+  it("should have a title tag defined for the svg", () => {
+    svgs.forEach(svg => {
+      if (svg.svgEl.querySelector("title") === null) {
+        fail(`svg ${svg.filePath} does not have a title defined for it`);
+      }
+    });
+  });
+
+  it("should have a text description on the title tag", () => {
+    svgs.forEach(svg => {
+      if (svg.svgEl.querySelector("title").innerHTML === "") {
+        fail(`svg ${svg.filePath} does not have a title defined for it`);
+      }
+    });
+  });
 });
