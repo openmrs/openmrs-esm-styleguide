@@ -4,20 +4,9 @@ import "./button-icons.css";
 import ejs from "ejs";
 import { htmlStory } from "../story-helpers";
 import { select } from "@storybook/addon-knobs";
+import { icons } from "../icons/icons.stories.js";
 
 storiesOf("OpenMRS Styleguide", module).add("Button icons", () => {
-  const icons = {
-    Visibility: "visibility",
-    Menu: "menu",
-    Search: "search",
-    "Arrow back": "arrow-back",
-    "Arrow downward": "arrow-downward",
-    "Arrow upward": "arrow-upward",
-    "Chevron left": "chevron-left",
-    "Chevron right": "chevron-right",
-    "Supervised user circle": "supervised-user-circle"
-  };
-
   const sizeOptions = {
     Medium: "medium",
     Large: "large"
