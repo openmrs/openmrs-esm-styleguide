@@ -6,18 +6,18 @@ import { select, text } from "@storybook/addon-knobs";
 import "./icons.js";
 import { options } from "../colors/colors.stories";
 
+export const icons = {
+  Visibility: "visibility",
+  Menu: "menu",
+  Search: "search",
+  "Arrow back": "arrow-back",
+  "Arrow downward": "arrow-downward",
+  "Arrow upward": "arrow-upward",
+  "Chevron left": "chevron-left",
+  "Chevron right": "chevron-right",
+  "Supervised user circle": "supervised-user-circle"
+};
 storiesOf("OpenMRS Styleguide", module).add("Icons", () => {
-  const icons = {
-    Visibility: "visibility",
-    Menu: "menu",
-    Search: "search",
-    "Arrow back": "arrow-back",
-    "Arrow downward": "arrow-downward",
-    "Arrow upward": "arrow-upward",
-    "Chevron left": "chevron-left",
-    "Chevron right": "chevron-right",
-    "Supervised user circle": "supervised-user-circle"
-  };
   const iconNames = Object.values(icons);
 
   const iconChoice = select("Icon", icons, "visibility");
