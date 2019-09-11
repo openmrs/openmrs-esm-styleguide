@@ -1,5 +1,4 @@
-import publicPathPromise from "./set-public-path.js";
+import setPublicPath from "./set-public-path.js";
 
-publicPathPromise.then(() =>
-  import(/* webpackChunkName: "styleguide-entry" */ "./styleguide-entry")
-);
+setPublicPath();
+import(/* webpackChunkName: "styleguide-entry" */ "./styleguide-entry");
