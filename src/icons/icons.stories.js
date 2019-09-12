@@ -15,7 +15,8 @@ export const icons = {
   "Arrow upward": "arrow-upward",
   "Chevron left": "chevron-left",
   "Chevron right": "chevron-right",
-  "Supervised user circle": "supervised-user-circle"
+  "Supervised user circle": "supervised-user-circle",
+  Home: "home"
 };
 storiesOf("OpenMRS Styleguide", module).add("Icons", () => {
   const iconNames = Object.values(icons);
