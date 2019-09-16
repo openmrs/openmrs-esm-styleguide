@@ -63,6 +63,7 @@
     "pretty-quick": "^1.11.1",
     "raw-loader": "^3.1.0",
     "style-loader": "^1.0.0",
+    "systemjs-webpack-interop": "^1.1.0",
     "webpack": "^4.35.3",
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.8.0"
