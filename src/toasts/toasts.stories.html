@@ -1,0 +1,40 @@
+<article>
+  <h2>OpenMRS Toasts</h2>
+  <div class="examples">
+    <div class="omrs-toast">
+      <p class="text">This is a toast</p>
+      <div class="divider" />
+      <button class="omrs-btn-icon-medium omrs-toast-btn">
+        <svg>
+          <use xlink:href="#omrs-icon-close"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="tabs">
+    <div lang="html" class="tab">HTML</div>
+    <div lang="jsx" class="tab">JSX</div>
+  </div>
+  <div class="panels">
+    <div class="panel html">
+      <div class="omrs-toast">
+        <p class="text"><%- text %></p>
+        <div class="divider" />
+        <button class=" omrs-toast-btn">
+          <svg style="margin: auto;color:white">
+            <use xlink:href="#omrs-icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="panel jsx">
+    <div className="omrs-toast">
+      <p className="text">This is a toast</p>
+      <div className="divider" />
+      <div className="omrs-toast-div">
+        <button className="omrs-toast-btn">Close</button>
+      </div>
+    </div>
+  </div>
+</article>
