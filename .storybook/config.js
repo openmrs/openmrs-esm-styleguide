@@ -1,4 +1,4 @@
-import { addDecorator, configure } from "@storybook/html";
+import { addDecorator, configure, addParameters } from "@storybook/html";
 import { withA11y } from "@storybook/addon-a11y";
 import hljs from "highlight.js/lib/highlight";
 import xmlLanguage from "highlight.js/lib/languages/xml";
@@ -8,6 +8,7 @@ import bashLanguage from "highlight.js/lib/languages/bash";
 import "highlight.js/styles/a11y-dark.css";
 import "highlight.js/styles/tomorrow-night.css";
 import { withKnobs } from "@storybook/addon-knobs";
+import omrsTheme from "./theme";
 
 hljs.registerLanguage("xml", xmlLanguage);
 hljs.registerLanguage("css", cssLanguage);
@@ -16,6 +17,11 @@ hljs.registerLanguage("bash", bashLanguage);
 
 addDecorator(withA11y);
 addDecorator(withKnobs);
+addParameters({
+  options: {
+    theme: omrsTheme
+  }
+});
 
 // automatically import all files ending in *.stories.js
 require("../src/intro.stories");
