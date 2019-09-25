@@ -5,9 +5,26 @@
       <%- text %>
     </div>
   </section>
-  <div class="stories-example lang-html">
-    <div class="omrs-card omrs-padding-8">
-      <%- text %>
+  <div class="examples">
+    <div class="tabs">
+      <div lang="html" class="tab">HTML</div>
+      <div lang="jsx" class="tab">JSX</div>
+    </div>
+    <div class="panels">
+      <div class="panel html">
+        <div class="stories-example lang-html">
+          <div class="omrs-card omrs-padding-8">
+            <%- text %>
+          </div>
+        </div>
+      </div>
+      <div class="panel jsx">
+        <div class="stories-example lang-html">
+          <div className="omrs-card omrs-padding-8">
+            <%- text %>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </article>

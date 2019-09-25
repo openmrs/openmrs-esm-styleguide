@@ -25,12 +25,31 @@
       %>rem;"<% } %> >
       <use xlink:href="<%- href %>"></use>
     </svg>
-    <div class="stories-example lang-html">
-      <svg class="omrs-icon" <%- fill %>
-        <% if (size !== '1.5') { %>style="height: <%- size %>rem; width: <%-
-        size %>rem;"<% } %> >
-        <use xlink:href="<%- href %>"></use>
-      </svg>
+    <div class="examples">
+      <div class="tabs">
+        <div lang="html" class="tab">HTML</div>
+        <div lang="jsx" class="tab">JSX</div>
+      </div>
+      <div class="panels">
+        <div class="panel html">
+          <div class="stories-example lang-html">
+            <svg class="omrs-icon" <%- fill %>
+              <% if (size !== '1.5') { %>style="height: <%- size %>rem; width:
+              <%- size %>rem;"<% } %> >
+              <use xlink:href="<%- href %>"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="panel jsx">
+          <div class="stories-example lang-html">
+            <svg className="omrs-icon" <%- fill %>
+              <% if (size !== '1.5') { %>style="height: <%- size %>rem; width:
+              <%- size %>rem;"<% } %> >
+              <use xlinkHref="<%- href %>"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </article>
