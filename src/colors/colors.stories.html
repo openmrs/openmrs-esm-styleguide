@@ -1,5 +1,5 @@
 <article class="stories-colors">
-  <h2>OpenMRS colors</h2>
+  <h2>OpenMRS Colors</h2>
   <section>
     OpenMRS colors are
     <a
@@ -24,13 +24,32 @@
     <% }) %>
   </div>
   <h3>Code example</h3>
-  <div class="stories-example lang-html">
-    <!-- In your html -->
-    <div class="my-css-class">Some content in a div</div>
+  <div class="examples">
+    <div class="tabs">
+      <div lang="html" class="tab">HTML</div>
+      <div lang="jsx" class="tab">JSX</div>
+    </div>
+    <div class="panels">
+      <div class="panel html">
+        <div class="stories-example lang-html">
+          <!-- In your html -->
+          <div class="myClass">Some content in a div</div>
+        </div>
+      </div>
+      <div class="panel jsx">
+        <div class="stories-example lang-js">
+          // In your React component import { styles } from './custom.css';
+
+          <div className="{styles.myClass}">
+            Some content in a div
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="stories-example lang-css">
-    /* in a css file */ .my-css-class { background-color: var(<%- chosenColor
-    %>); color: white; width: 10rem; height: 4rem; }
+    /* in a css file */ .myClass { background-color: var(<%- chosenColor%>);
+    color: white; width: 10rem; height: 4rem; }
   </div>
   <div class="my-css-class">
     Some content in a div

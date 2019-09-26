@@ -1,35 +1,65 @@
 <article class="stories-button">
   <section>
-    <h2>Link example:</h2>
-    <a
-      class="<%= determineStyle('a', buttonType, styleType, isRounded, isLarge) %>"
-    >
+    <h2>OpenMRS Links</h2>
+    <a class="<%= determineStyle('a', buttonType, styleType, isRounded, isLarge) %>">
       A link
     </a>
-    <div class="stories-example lang-html">
-      <a
-        class="<%= determineStyle('a', buttonType, styleType, isRounded, isLarge) %>"
-      >
-        A link
-      </a>
+    <div class="examples">
+      <div class="tabs">
+        <div lang="html" class="tab">HTML</div>
+        <div lang="jsx" class="tab">JSX</div>
+      </div>
+      <div class="panels">
+        <div class="panel html">
+          <div class="stories-example lang-html">
+            <a class="<%= determineStyle('a', buttonType, styleType, isRounded, isLarge) %>">
+              A link
+            </a>
+          </div>
+        </div>
+        <div class="panel jsx">
+          <div class="stories-example lang-html">
+            <a className="<%= determineStyle('a', buttonType, styleType, isRounded, isLarge) %>">
+              A link
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   </section>
   <section>
-    <h2>Button example:</h2>
-    <button
-      class="<%= determineStyle('button', buttonType, styleType, isRounded, isLarge) %>"
-      <%= disabledAttribute(styleType) %>
-    >
+    <div>
+    <h2>OpenMRS Buttons</h2>
+  </div>
+    <button class="<%= determineStyle('button', buttonType, styleType, isRounded, isLarge) %>"
+      <%= disabledAttribute(styleType) %>>
       A button
     </button>
-    <div class="stories-example lang-html">
-      <button
-        class="<%= determineStyle('button', buttonType, styleType, isRounded, isLarge) %>"<% buttonType == 'disabled' ? 'disabled' : '' %>
-        <%= disabledAttribute(styleType) %>
-      >
-        A button
-      </button>
-    </div>
+    <div class="examples">
+        <div class="tabs">
+          <div lang="html" class="tab">HTML</div>
+          <div lang="jsx" class="tab">JSX</div>
+        </div>
+        <div class="panels">
+          <div class="panel html">
+            <div class="stories-example lang-html">
+                <button class="<%= determineStyle('button', buttonType, styleType, isRounded, isLarge) %>"
+                    <% buttonType == 'disabled' ? 'disabled' : '' %> <%= disabledAttribute(styleType) %>>
+                    A button
+                  </button>
+            </div>
+          </div>
+          <div class="panel jsx">
+            <div class="stories-example lang-html">
+                <button className="<%= determineStyle('button', buttonType, styleType, isRounded, isLarge) %>"
+                    <% buttonType == 'disabled' ? 'disabled' : '' %> <%= disabledAttribute(styleType) %>>
+                    A button
+                  </button>
+            </div>
+          </div>
+        </div>
+      </div>
   </section>
   <h2>Buttons vs Links vs Divs</h2>
   <section>
@@ -48,25 +78,33 @@
       <tbody>
         <tr>
           <td>Link</td>
-          <td><pre>&lt;a&gt;</pre></td>
+          <td>
+            <pre>&lt;a&gt;</pre>
+          </td>
           <td>&#x2714;</td>
           <td>&#x2714;</td>
         </tr>
         <tr>
           <td>Button</td>
-          <td><pre>&lt;button&gt;</pre></td>
+          <td>
+            <pre>&lt;button&gt;</pre>
+          </td>
           <td>&#x2714;</td>
           <td>&#x2718;</td>
         </tr>
         <tr>
           <td>Div</td>
-          <td><pre>&lt;div&gt;</pre></td>
+          <td>
+            <pre>&lt;div&gt;</pre>
+          </td>
           <td>&#x2718;</td>
           <td>&#x2718;</td>
         </tr>
         <tr>
           <td>Span</td>
-          <td><pre>&lt;span&gt;</pre></td>
+          <td>
+            <pre>&lt;span&gt;</pre>
+          </td>
           <td>&#x2718;</td>
           <td>&#x2718;</td>
         </tr>
@@ -188,9 +226,7 @@
   <h2>Buttons</h2>
   <section>
     <p>
-      <span class="omrs-underline omrs-italic omrs-bold"
-        >You should use buttons more often than you're used to.</span
-      >
+      <span class="omrs-underline omrs-italic omrs-bold">You should use buttons more often than you're used to.</span>
     </p>
     <p>
       If it has a click listener, it should probably be a button.
@@ -273,7 +309,7 @@
     display: flex;
   }
 
-  .stories-button .button-examples > * {
+  .stories-button .button-examples>* {
     margin: 0 0.5rem 1rem 0.5rem;
   }
 
@@ -288,7 +324,8 @@
     margin: 0;
   }
 
-  .button-links-explanation-table th, .button-links-explanation-table td {
+  .button-links-explanation-table th,
+  .button-links-explanation-table td {
     padding: .5rem;
     text-align: center;
     border: 1px solid var(--omrs-color-text-black);

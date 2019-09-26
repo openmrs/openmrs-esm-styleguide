@@ -23,7 +23,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.woff2?$/,
+        test: /\.(woff|woff2|png)?$/,
         use: ["file-loader"]
       },
       {
