@@ -12,6 +12,9 @@
     "prepublishOnly": "npm run build",
     "test": "jest"
   },
+  "directories": {
+    "lib": "dist"
+  },
   "browserslist": [
     "extends browserslist-config-openmrs"
   ],
@@ -53,6 +56,7 @@
     "eslint-config-important-stuff": "^1.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "file-loader": "^4.2.0",
+    "highlight.js": "^9.15.10",
     "husky": "^3.0.0",
     "jest": "^24.9.0",
     "jest-cli": "^24.9.0",
@@ -67,7 +71,5 @@
     "webpack-cli": "^3.3.5",
     "webpack-dev-server": "^3.8.0"
   },
-  "dependencies": {
-    "highlight.js": "^9.15.10"
-  }
+  "dependencies": {}
 }
