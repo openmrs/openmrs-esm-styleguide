@@ -7,11 +7,13 @@ document.body.appendChild(toastsContainer);
 export function showToast(options) {
   ReactDOM.render(
     <div className="omrs-toast">
-      <p className="text">{options.description}</p>
+      <p className="text">This is a toast</p>
       <div className="divider" />
-      <div className="omrs-toast-div">
-        <button className="omrs-toast-btn">Close</button>
-      </div>
+      <button className="omrs-btn-icon-medium omrs-toast-btn">
+        <svg>
+          <use xlinkHref="#omrs-icon-close" />
+        </svg>
+      </button>
     </div>,
     toastsContainer
   );
