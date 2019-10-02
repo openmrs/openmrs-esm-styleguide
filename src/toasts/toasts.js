@@ -9,7 +9,7 @@ export function showToast(options) {
     <div className="omrs-toast">
       <p className="text">This is a toast</p>
       <div className="divider" />
-      <button className="omrs-btn-icon-medium omrs-toast-btn">
+      <button className="omrs-toast-btn">
         <svg>
           <use xlinkHref="#omrs-icon-close" />
         </svg>
