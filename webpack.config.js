@@ -23,6 +23,10 @@ module.exports = {
         ]
       },
       {
+        test: /\.(js|jsx)$/,
+        use: ["babel-loader"]
+      },
+      {
         test: /\.(woff|woff2|png)?$/,
         use: ["file-loader"]
       },

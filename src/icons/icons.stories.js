@@ -16,6 +16,7 @@ export const icons = {
   "Chevron left": "chevron-left",
   "Chevron right": "chevron-right",
   "Supervised user circle": "supervised-user-circle",
+  "close icon": "close",
   Home: "home"
 };
 storiesOf("OpenMRS Styleguide", module).add("Icons", () => {
