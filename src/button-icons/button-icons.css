@@ -1,7 +1,7 @@
 .omrs-btn-icon-medium {
   width: 2rem;
   height: 2rem;
-  text-align: center;
+  vertical-align: middle;
   background: transparent;
   border: none;
 }
@@ -9,7 +9,7 @@
 .omrs-btn-icon-large {
   width: 2rem;
   height: 2rem;
-  text-align: center;
+  vertical-align: middle;
   background: transparent;
   border: none;
 }
@@ -27,7 +27,6 @@
 .omrs-btn-icon-large svg {
   position: relative;
   right: 0.5rem;
-  fill: var(--omrs-color-primary-blue);
   width: 2rem;
   height: 2rem;
 }
@@ -35,7 +34,6 @@
 .omrs-btn-icon-medium svg {
   position: relative;
   right: 0.25rem;
-  fill: var(--omrs-color-primary-blue);
   width: 1.5rem;
   height: 1.5rem;
 }
