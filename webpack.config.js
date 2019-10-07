@@ -42,7 +42,7 @@ module.exports = {
       "Access-Control-Allow-Origin": "*"
     }
   },
-  externals: [/^@openmrs\/.+$/, "react", "react-dom"],
+  externals: [/^@openmrs\/.+$/, "react", "react-dom", "rxjs"],
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({ filename: "openmrs-esm-styleguide.css" })
