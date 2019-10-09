@@ -3,6 +3,13 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+/* https://issues.openmrs.org/projects/MF/issues/MF-47 */
+@supports (font: -apple-system-body) {
+  html {
+    font: -apple-system-body;
+  }
+}
+
 .omrs-type-serif {
   font-family: "Merriweather", serif;
 }
