@@ -3,7 +3,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* https://issues.openmrs.org/projects/MF/issues/MF-47 */
+/*
+  https://issues.openmrs.org/projects/MF/issues/MF-47
+  https://dev.to/colingourlay/how-to-support-apple-s-dynamic-text-in-your-web-content-with-css-40c0
+*/
 @supports (font: -apple-system-body) {
   html {
     font: -apple-system-body;
