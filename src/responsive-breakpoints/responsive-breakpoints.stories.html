@@ -1,0 +1,45 @@
+<article>
+  <h1>Responsive breakpoints</h1>
+  <section>
+    <h3>Your current device:</h3>
+    <p class="device-type phone">Phone</p>
+    <p class="device-type tablet">Tablet</p>
+    <p class="device-type desktop">Desktop</p>
+  </section>
+  <section>
+    <div class="phone-breakpoint">
+      Blue background on a phone, pink on other devices
+    </div>
+    <div class="desktop-breakpoint">
+      green background on a desktop, gray on other devices
+    </div>
+  </section>
+</article>
+<style>
+  .device-type {
+    display: none;
+  }
+
+  .omrs-breakpoint-lt-tablet .phone,
+  .omrs-breakpoint-lt-tablet .phone,
+  .omrs-breakpoint-lt-desktop.omrs-breakpoint-gt-phone .tablet,
+  .omrs-breakpoint-gt-tablet .desktop {
+    display: block;
+  }
+
+  .omrs-breakpoint-lt-tablet .phone-breakpoint {
+    background-color: lightblue;
+  }
+
+  .omrs-breakpoint-gt-phone .phone-breakpoint {
+    background-color: lightpink;
+  }
+
+  .omrs-breakpoint-gt-tablet .desktop-breakpoint {
+    background-color: lightgreen;
+  }
+
+  .omrs-breakpoint-lt-desktop .desktop-breakpoint {
+    background-color: lightslategray;
+  }
+</style>
