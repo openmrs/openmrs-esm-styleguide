@@ -12,5 +12,6 @@ import "./inputs/input.css";
 import "./main-content/main-content.css";
 import "./button-icons/button-icons.css";
 import "./toasts/toasts.css";
+import "./responsive-breakpoints/responsive-breakpoints.js";
 
 export { showToast } from "./toasts/toasts.js";
