@@ -15,6 +15,7 @@ export const icons = {
   "Arrow upward": "arrow-upward",
   "Chevron left": "chevron-left",
   "Chevron right": "chevron-right",
+  "Chevron  down": "chevron-down",
   "Supervised user circle": "supervised-user-circle",
   "close icon": "close",
   Home: "home"
