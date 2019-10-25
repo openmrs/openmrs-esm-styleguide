@@ -6,13 +6,6 @@ import { select } from "@storybook/addon-knobs";
 import ejs from "ejs";
 
 export const options = {
-  "Primary blue": "--omrs-color-primary-blue",
-  "Text black": "--omrs-color-text-black",
-  "Inactive grey": "--omrs-color-inactive-grey",
-  "Inactive grey two": "--omrs-color-inactive-grey-two",
-  "Background canvas": "--omrs-color-background-canvas",
-  "Critical alert red": "--omrs-color-critical-alert-red",
-
   "Background high contrast": "--omrs-color-bg-high-contrast",
   "Background medium contrast": "--omrs-color-bg-medium-contrast",
   "Background low contrast": "--omrs-color-bg-low-contrast",
@@ -45,7 +38,7 @@ export const options = {
 };
 
 storiesOf("OpenMRS Styleguide", module).add("Colors", () => {
-  const defaultValue = "--omrs-color-primary-blue";
+  const defaultValue = "--omrs-color-success";
 
   const chosenColor = select("OpenMRS Color", options, defaultValue);
 

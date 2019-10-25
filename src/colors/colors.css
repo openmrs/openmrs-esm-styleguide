@@ -1,11 +1,4 @@
 :root {
-  --omrs-color-inactive-grey: #3c3c43;
-  --omrs-color-primary-blue: #1a73e8;
-  --omrs-color-text-black: #212121;
-  --omrs-color-inactive-grey-two: #5f6369;
-  --omrs-color-background-canvas: #fafafa;
-  --omrs-color-critical-alert-red: #e13332;
-
   --omrs-color-bg-high-contrast: #ffffff;
   --omrs-color-bg-medium-contrast: rgba(249, 249, 249, 0.94);
   --omrs-color-bg-low-contrast: #eff1f2;

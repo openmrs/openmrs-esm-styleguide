@@ -36,7 +36,7 @@ input[type="button"].omrs-unstyled:focus {
   */
   outline: solid !important;
   outline-width: thin !important;
-  outline-color: var(--omrs-color-inactive-grey) !important;
+  outline-color: var(--omrs-color-bg-lowest-contrast) !important;
 }
 
 a.omrs-unstyled,
