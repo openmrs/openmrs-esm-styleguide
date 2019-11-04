@@ -16,9 +16,11 @@ export const icons = {
   "Chevron left": "chevron-left",
   "Chevron right": "chevron-right",
   "Chevron  down": "chevron-down",
+  "Chevron  up": "chevron-up",
   "Supervised user circle": "supervised-user-circle",
   "close icon": "close",
-  Home: "home"
+  Home: "home",
+  "Important Notification": "important-notification"
 };
 storiesOf("OpenMRS Styleguide", module).add("Icons", () => {
   const iconNames = Object.values(icons);
