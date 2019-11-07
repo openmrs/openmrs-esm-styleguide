@@ -5,6 +5,7 @@
   "main": "dist/openmrs-esm-styleguide.js",
   "scripts": {
     "start": "webpack-dev-server",
+    "start-https": "webpack-dev-server --https",
     "storybook": "start-storybook --port 7000",
     "build-storybook": "build-storybook",
     "lint": "eslint src",

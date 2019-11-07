@@ -14,6 +14,7 @@ import iconHome from "./svgs/home_24px_rounded.svg";
 import iconClose from "./svgs/close-24px.svg";
 import iconAdd from "./svgs/add_24px_rounded.svg";
 import iconImportantNotification from "./svgs/important_notification_24px_rounded.svg";
+import iconHorizontalMore from "./svgs/more_horiz-24px_rounded.svg";
 import { addSvg } from "../svg-utils";
 
 addSvg("omrs-icon-visibility", iconVisibility);
@@ -31,3 +32,4 @@ addSvg("omrs-icon-home", iconHome);
 addSvg("omrs-icon-close", iconClose);
 addSvg("omrs-icon-add", iconAdd);
 addSvg("omrs-icon-important-notification", iconImportantNotification);
+addSvg("omrs-icon-horiz-more", iconHorizontalMore);

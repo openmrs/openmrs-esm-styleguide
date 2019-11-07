@@ -21,7 +21,8 @@ export const icons = {
   "close icon": "close",
   "add icon": "add",
   Home: "home",
-  "Important Notification": "important-notification"
+  "Important Notification": "important-notification",
+  "Horizontal more": "horiz-more"
 };
 storiesOf("OpenMRS Styleguide", module).add("Icons", () => {
   const iconNames = Object.values(icons);
