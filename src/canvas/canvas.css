@@ -1,6 +1,6 @@
 html,
 body {
-  background-color: var(--omrs-bg-lowest-contrast);
+  background-color: var(--omrs-bg-low-contrast);
   margin: 0;
   padding: 0;
 }
