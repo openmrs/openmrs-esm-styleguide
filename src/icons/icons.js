@@ -12,6 +12,7 @@ import iconChevronUp from "./svgs/chevron_up_24px_rounded.svg";
 import iconSupervisedUserCircle from "./svgs/supervised_user_circle_24px_rounded.svg";
 import iconHome from "./svgs/home_24px_rounded.svg";
 import iconClose from "./svgs/close-24px.svg";
+import iconAdd from "./svgs/add_24px_rounded.svg";
 import iconImportantNotification from "./svgs/important_notification_24px_rounded.svg";
 import { addSvg } from "../svg-utils";
 
@@ -28,4 +29,5 @@ addSvg("omrs-icon-chevron-down", iconChevronDown);
 addSvg("omrs-icon-supervised-user-circle", iconSupervisedUserCircle);
 addSvg("omrs-icon-home", iconHome);
 addSvg("omrs-icon-close", iconClose);
+addSvg("omrs-icon-add", iconAdd);
 addSvg("omrs-icon-important-notification", iconImportantNotification);

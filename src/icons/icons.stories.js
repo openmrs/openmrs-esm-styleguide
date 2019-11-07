@@ -19,6 +19,7 @@ export const icons = {
   "Chevron  up": "chevron-up",
   "Supervised user circle": "supervised-user-circle",
   "close icon": "close",
+  "add icon": "add",
   Home: "home",
   "Important Notification": "important-notification"
 };
