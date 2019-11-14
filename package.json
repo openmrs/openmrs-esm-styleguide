@@ -4,7 +4,7 @@
   "description": "The styleguide for OpenMRS SPA",
   "main": "dist/openmrs-esm-styleguide.js",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --mode=development",
     "storybook": "start-storybook --port 7000",
     "build-storybook": "build-storybook",
     "lint": "eslint src",
@@ -20,7 +20,7 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && npm run lint && npm run test"
+      "pre-commit": "pretty-quick --staged && concurrently 'npm:test' 'npm:lint'"
     }
   },
   "repository": {
@@ -50,6 +50,7 @@
     "babel-loader": "^8.0.6",
     "browserslist-config-openmrs": "^1.0.0",
     "clean-webpack-plugin": "^3.0.0",
+    "concurrently": "^5.0.0",
     "css-loader": "^3.2.0",
     "cssnano": "^4.1.10",
     "ejs": "^2.6.2",
