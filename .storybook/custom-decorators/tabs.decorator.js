@@ -51,6 +51,6 @@ export const withTabs = storyFn => {
   useEffect(() => {
     showLastViewedLangTab();
     getTabs().forEach(tab => tab.addEventListener("click", switchTab));
-  }, []);
+  });
   return storyFn();
 };
