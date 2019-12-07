@@ -20,7 +20,9 @@ export const icons = {
   "Supervised user circle": "supervised-user-circle",
   "close icon": "close",
   Home: "home",
-  "Important Notification": "important-notification"
+  "Important Notification": "important-notification",
+  "Access time": "access-time",
+  Calendar: "calendar"
 };
 storiesOf("OpenMRS Styleguide", module).add("Icons", () => {
   const iconNames = Object.values(icons);
