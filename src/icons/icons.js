@@ -13,6 +13,8 @@ import iconSupervisedUserCircle from "./svgs/supervised_user_circle_24px_rounded
 import iconHome from "./svgs/home_24px_rounded.svg";
 import iconClose from "./svgs/close-24px.svg";
 import iconImportantNotification from "./svgs/important_notification_24px_rounded.svg";
+import iconCalendar from "./svgs/calendar_24px_rounded.svg";
+import iconAccessTime from "./svgs/access_time-24px_rounded.svg";
 import { addSvg } from "../svg-utils";
 
 addSvg("omrs-icon-visibility", iconVisibility);
@@ -29,3 +31,5 @@ addSvg("omrs-icon-supervised-user-circle", iconSupervisedUserCircle);
 addSvg("omrs-icon-home", iconHome);
 addSvg("omrs-icon-close", iconClose);
 addSvg("omrs-icon-important-notification", iconImportantNotification);
+addSvg("omrs-icon-access-time", iconAccessTime);
+addSvg("omrs-icon-calendar", iconCalendar);
