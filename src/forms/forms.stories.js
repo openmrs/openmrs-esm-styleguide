@@ -10,16 +10,33 @@ storiesOf("OpenMRS Styleguide", module).add("Forms", () => {
     "Type",
     {
       CheckBox: "checkbox",
-      Radio: "radio"
+      Radio: "radio",
+      Date: "date"
     },
     "checkbox"
   );
 
-  const determineInputType = inputType =>
-    inputType === "checkbox" ? "checkbox" : "radio";
+  const determineInputType = inputType => {
+    switch (inputType) {
+      case "checkbox":
+        return "checkbox";
+      case "radio":
+        return "radio";
+      case "date":
+        return "date";
+    }
+  };
 
-  const determineStyle = inputType =>
-    inputType === "checkbox" ? "omrs-checkbox" : "omrs-radio-button";
+  const determineStyle = inputType => {
+    switch (inputType) {
+      case "checkbox":
+        return "omrs-checkbox";
+      case "radio":
+        return "omrs-radio-button";
+      case "date":
+        return "omrs-datepicker";
+    }
+  };
 
   return htmlStory(
     ejs.render(html, {
