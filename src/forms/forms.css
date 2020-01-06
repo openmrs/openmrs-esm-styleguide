@@ -8,6 +8,11 @@
 .omrs-checkbox input[type="checkbox"] + span::after {
   position: absolute;
 }
+
+.omrs-checkbox input[type="checkbox"] + span {
+  margin: 0rem 0rem 0rem 0.9375rem;
+}
+
 .omrs-checkbox input[type="checkbox"] + span::before {
   content: "";
   display: inline-flex;
@@ -58,7 +63,7 @@
   border: 0.125rem solid var(--omrs-color-ink-medium-contrast);
   top: 0rem;
   left: 0rem;
-  margin-right: 0.5rem;
+  margin-right: 0.9375rem;
   align-content: center;
 }
 
@@ -99,6 +104,9 @@
 .omrs-radio-button input[type="radio"] + span::after {
   position: absolute;
   border-radius: 50%;
+}
+.omrs-radio-button input[type="radio"] + span {
+  margin: 0rem 0rem 0rem 0.9375rem;
 }
 .omrs-radio-button input[type="radio"] + span::before {
   content: "";
@@ -155,7 +163,7 @@
   border: 0.125rem solid var(--omrs-color-ink-medium-contrast);
   top: 0rem;
   left: 0rem;
-  margin-right: 0.5rem;
+  margin-right: 0.9375rem;
 }
 
 .omrs-radio-button input[type="radio"] + label::after {
