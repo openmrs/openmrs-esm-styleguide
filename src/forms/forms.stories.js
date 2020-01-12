@@ -11,7 +11,8 @@ storiesOf("OpenMRS Styleguide", module).add("Forms", () => {
     {
       CheckBox: "checkbox",
       Radio: "radio",
-      Date: "date"
+      Date: "date",
+      ToggleButton: "toggleButton"
     },
     "checkbox"
   );
@@ -24,6 +25,8 @@ storiesOf("OpenMRS Styleguide", module).add("Forms", () => {
         return "radio";
       case "date":
         return "date";
+      case "toggleButton":
+        return "toggleButton";
     }
   };
 
