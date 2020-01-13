@@ -230,3 +230,36 @@
 .omrs-datepicker input[type="time"]:valid + svg {
   fill: var(--omrs-color-interaction);
 }
+
+/* toggle Switch styles */
+
+.toggleSwitch {
+  border: 0.0625rem solid var(--omrs-color-ink-lowest-contrast);
+  border-radius: 2rem;
+  display: flex;
+  background-color: var(--omrs-color-ink-white);
+  min-width: 100%;
+  z-index: 1;
+  justify-content: space-between;
+}
+
+.toggleSwitch input[type="radio"] {
+  display: none;
+}
+
+.toggleSwitch input[type="radio"] + label {
+  color: var(--omrs-color-ink-medium-contrast);
+  font-weight: bold;
+  padding: 0.5rem 0.5rem;
+  z-index: 100;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.toggleSwitch input[type="radio"]:checked + label {
+  border: 0.0625rem solid var(--omrs-color-interaction);
+  border-radius: 2rem;
+  color: var(--omrs-color-interaction);
+  background-color: var(--omrs-color-ink-white);
+}
