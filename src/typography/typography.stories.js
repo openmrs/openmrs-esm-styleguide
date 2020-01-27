@@ -7,6 +7,7 @@ import "./typography.css";
 
 storiesOf("OpenMRS Styleguide", module).add("Typography & Font", () => {
   const boldText = text("Bold text", "Bolded text");
+  const mediumText = text("Medium text", "Medium text");
   const italicText = text("Italic text", "Italic text");
   const underlinedText = text("Underlined text", "Underlined text");
   const title1Text = text("Title 1 text", "Title 1 text");
@@ -21,6 +22,7 @@ storiesOf("OpenMRS Styleguide", module).add("Typography & Font", () => {
   return htmlStory(
     ejs.render(html, {
       boldText,
+      mediumText,
       italicText,
       underlinedText,
       title1Text,

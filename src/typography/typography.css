@@ -18,7 +18,11 @@ body {
 }
 
 .omrs-bold {
-  font-weight: bold;
+  font-weight: 700;
+}
+
+.omrs-medium {
+  font-weight: 500;
 }
 
 .omrs-italic {
