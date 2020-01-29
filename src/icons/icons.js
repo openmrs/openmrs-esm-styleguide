@@ -15,6 +15,8 @@ import iconClose from "./svgs/close-24px.svg";
 import iconImportantNotification from "./svgs/important_notification_24px_rounded.svg";
 import iconCalendar from "./svgs/calendar_24px_rounded.svg";
 import iconAccessTime from "./svgs/access_time-24px_rounded.svg";
+import iconAdd from "./svgs/add_24px_rounded.svg";
+import iconRemove from "./svgs/remove-24px_rounded.svg";
 import { addSvg } from "../svg-utils";
 
 addSvg("omrs-icon-visibility", iconVisibility);
@@ -33,3 +35,5 @@ addSvg("omrs-icon-close", iconClose);
 addSvg("omrs-icon-important-notification", iconImportantNotification);
 addSvg("omrs-icon-access-time", iconAccessTime);
 addSvg("omrs-icon-calendar", iconCalendar);
+addSvg("omrs-icon-add", iconAdd);
+addSvg("omrs-icon-remove", iconRemove);

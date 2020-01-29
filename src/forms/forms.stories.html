@@ -71,6 +71,27 @@
           </div>
         </form>
       </div>
+
+      <div class="example-margin-left">
+        <h4 class="title">Increment Buttons</h4>
+        <form>
+          <div class="omrs-increment-buttons">
+            <div>
+              <svg class="omrs-icon">
+                <use xlink:href="#omrs-icon-add"></use>
+              </svg>
+            </div>
+            <div>
+              <span>3</span>
+            </div>
+            <div>
+              <svg class="omrs-icon">
+                <use xlink:href="#omrs-icon-remove"></use>
+              </svg>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </section>
   <section>
@@ -107,6 +128,24 @@
 
           <input type="radio" name="toggleButton" id="toggleButton4" />
           <label for="toggleButton4">No</label>
+        </div>
+      </div>
+      <% } if(determineInputType(inputType) == "incrementButton") { %>
+      <div class="formexample-input-group" style="width:30%">
+        <div class="omrs-increment-buttons">
+          <div>
+            <svg class="omrs-icon">
+              <use xlink:href="#omrs-icon-add"></use>
+            </svg>
+          </div>
+          <div>
+            <span>3</span>
+          </div>
+          <div>
+            <svg class="omrs-icon">
+              <use xlink:href="#omrs-icon-remove"></use>
+            </svg>
+          </div>
         </div>
       </div>
       <% } %>
@@ -207,6 +246,43 @@
                 <label htmlFor="toggleButton1">Yes</label>
                 <input type="radio" name="toggleButton" id="toggleButton2" />
                 <label htmlFor="toggleButton2">No</label>
+              </div>
+            </div>
+          </div>
+          <% } if(determineInputType(inputType) == "incrementButton") {%>
+          <div class="panel html">
+            <div class="stories-example lang-html">
+              <div class="omrs-increment-buttons">
+                <div>
+                  <svg class="omrs-icon">
+                    <use xlink:href="#omrs-icon-add"></use>
+                  </svg>
+                </div>
+                <div>
+                  <span>3</span>
+                </div>
+                <div>
+                  <svg class="omrs-icon">
+                    <use xlink:href="#omrs-icon-remove"></use>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel jsx">
+            <div class="stories-example lang-html">
+              <div>
+                <svg class="omrs-icon">
+                  <use xlinkHref="#omrs-icon-add"></use>
+                </svg>
+              </div>
+              <div>
+                <span>3</span>
+              </div>
+              <div>
+                <svg class="omrs-icon">
+                  <use xlinkHref="#omrs-icon-remove"></use>
+                </svg>
               </div>
             </div>
           </div>
