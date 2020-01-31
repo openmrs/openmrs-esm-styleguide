@@ -263,3 +263,60 @@
   color: var(--omrs-color-interaction);
   background-color: var(--omrs-color-ink-white);
 }
+
+/* Increment buttons styles */
+
+.omrs-increment-buttons {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border: 0.0625rem solid var(--omrs-color-ink-lowest-contrast);
+  align-items: center;
+  border-radius: 6.5rem;
+  background-color: var(--omrs-color-ink-white);
+}
+
+.omrs-increment-buttons div {
+  padding: 0.4rem;
+}
+
+.omrs-increment-buttons svg {
+  cursor: pointer;
+  user-select: none;
+}
+
+.omrs-increment-buttons div:nth-child(1) {
+  background-color: var(--omrs-color-bg-low-contrast);
+  flex: 1;
+  border-radius: 6.5rem 0rem 0rem 6.5rem;
+}
+
+.omrs-increment-buttons div:nth-child(2) {
+  display: flex;
+  flex: 1;
+  margin: 0rem;
+  padding: 0rem;
+  justify-content: center;
+}
+
+.omrs-increment-buttons div:nth-child(2) input {
+  color: var(--omrs-color-interaction);
+  font-weight: 700;
+  text-align: center;
+  background-color: var(--omrs-color-ink-white);
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.625rem 0rem;
+  border: none;
+  outline: none;
+}
+
+.omrs-increment-buttons div:nth-child(3) {
+  background-color: var(--omrs-color-bg-low-contrast);
+  flex: 1;
+  border-radius: 0rem 6.5rem 6.5rem 0rem;
+}
+
+.omrs-increment-buttons svg {
+  fill: var(--omrs-color-ink-medium-contrast);
+}

@@ -22,7 +22,9 @@ export const icons = {
   Home: "home",
   "Important Notification": "important-notification",
   "Access time": "access-time",
-  Calendar: "calendar"
+  Calendar: "calendar",
+  Add: "add",
+  Remove: "remove"
 };
 storiesOf("OpenMRS Styleguide", module).add("Icons", () => {
   const iconNames = Object.values(icons);

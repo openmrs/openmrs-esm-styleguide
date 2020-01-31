@@ -71,6 +71,31 @@
           </div>
         </form>
       </div>
+
+      <div class="example-margin-left">
+        <h4 class="title">Increment Buttons</h4>
+        <form>
+          <div class="omrs-increment-buttons">
+            <div>
+              <button class="omrs-btn-icon-medium">
+                <svg>
+                  <use xlink:href="#omrs-icon-add"></use>
+                </svg>
+              </button>
+            </div>
+            <div>
+              <input type="text" value="2" />
+            </div>
+            <div>
+              <button class="omrs-btn-icon-medium">
+                <svg>
+                  <use xlink:href="#omrs-icon-remove"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </section>
   <section>
@@ -107,6 +132,28 @@
 
           <input type="radio" name="toggleButton" id="toggleButton4" />
           <label for="toggleButton4">No</label>
+        </div>
+      </div>
+      <% } if(determineInputType(inputType) == "incrementButton") { %>
+      <div class="formexample-input-group" style="width:30%">
+        <div class="omrs-increment-buttons">
+          <div>
+            <button type="button" class="omrs-btn-icon-medium">
+              <svg>
+                <use xlink:href="#omrs-icon-add"></use>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <input type="text" value="2" />
+          </div>
+          <div>
+            <button type="button" class="omrs-btn-icon-medium">
+              <svg>
+                <use xlink:href="#omrs-icon-remove"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
       <% } %>
@@ -210,8 +257,55 @@
               </div>
             </div>
           </div>
-          <% } %>
+          <% } if(determineInputType(inputType) == "incrementButton") {%>
+          <div class="panel html">
+            <div class="stories-example lang-html">
+              <div class="omrs-increment-buttons">
+                <div>
+                  <button type="button" class="omrs-btn-icon-medium">
+                    <svg>
+                      <use xlink:href="#omrs-icon-add"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <input type="text" value="2" />
+                </div>
+                <div>
+                  <button type="button" class="omrs-btn-icon-medium">
+                    <svg>
+                      <use xlink:href="#omrs-icon-remove"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel jsx">
+            <div class="stories-example lang-html">
+              <div className="omrs-increment-buttons">
+                <div>
+                  <button type="button" className="omrs-btn-icon-medium">
+                    <svg>
+                      <use xlinkHref="#omrs-icon-add"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <input type="text" value="2" />
+                </div>
+                <div>
+                  <button type="button" className="omrs-btn-icon-medium">
+                    <svg>
+                      <use xlinkHref="#omrs-icon-remove"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <% } %>
       </div>
     </section>
   </section>
