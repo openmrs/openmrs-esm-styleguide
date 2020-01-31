@@ -77,17 +77,21 @@
         <form>
           <div class="omrs-increment-buttons">
             <div>
-              <svg class="omrs-icon">
-                <use xlink:href="#omrs-icon-add"></use>
-              </svg>
+              <button class="omrs-btn-icon-medium">
+                <svg>
+                  <use xlink:href="#omrs-icon-add"></use>
+                </svg>
+              </button>
             </div>
             <div>
-              <span>3</span>
+              <input type="text" value="2" />
             </div>
             <div>
-              <svg class="omrs-icon">
-                <use xlink:href="#omrs-icon-remove"></use>
-              </svg>
+              <button class="omrs-btn-icon-medium">
+                <svg>
+                  <use xlink:href="#omrs-icon-remove"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </form>
@@ -134,17 +138,21 @@
       <div class="formexample-input-group" style="width:30%">
         <div class="omrs-increment-buttons">
           <div>
-            <svg class="omrs-icon">
-              <use xlink:href="#omrs-icon-add"></use>
-            </svg>
+            <button type="button" class="omrs-btn-icon-medium">
+              <svg>
+                <use xlink:href="#omrs-icon-add"></use>
+              </svg>
+            </button>
           </div>
           <div>
-            <span>3</span>
+            <input type="text" value="2" />
           </div>
           <div>
-            <svg class="omrs-icon">
-              <use xlink:href="#omrs-icon-remove"></use>
-            </svg>
+            <button type="button" class="omrs-btn-icon-medium">
+              <svg>
+                <use xlink:href="#omrs-icon-remove"></use>
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -254,40 +262,50 @@
             <div class="stories-example lang-html">
               <div class="omrs-increment-buttons">
                 <div>
-                  <svg class="omrs-icon">
-                    <use xlink:href="#omrs-icon-add"></use>
-                  </svg>
+                  <button type="button" class="omrs-btn-icon-medium">
+                    <svg>
+                      <use xlink:href="#omrs-icon-add"></use>
+                    </svg>
+                  </button>
                 </div>
                 <div>
-                  <span>3</span>
+                  <input type="text" value="2" />
                 </div>
                 <div>
-                  <svg class="omrs-icon">
-                    <use xlink:href="#omrs-icon-remove"></use>
-                  </svg>
+                  <button type="button" class="omrs-btn-icon-medium">
+                    <svg>
+                      <use xlink:href="#omrs-icon-remove"></use>
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
           <div class="panel jsx">
             <div class="stories-example lang-html">
-              <div>
-                <svg class="omrs-icon">
-                  <use xlinkHref="#omrs-icon-add"></use>
-                </svg>
-              </div>
-              <div>
-                <span>3</span>
-              </div>
-              <div>
-                <svg class="omrs-icon">
-                  <use xlinkHref="#omrs-icon-remove"></use>
-                </svg>
+              <div className="omrs-increment-buttons">
+                <div>
+                  <button type="button" className="omrs-btn-icon-medium">
+                    <svg>
+                      <use xlinkHref="#omrs-icon-add"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div>
+                  <input type="text" value="2" />
+                </div>
+                <div>
+                  <button type="button" className="omrs-btn-icon-medium">
+                    <svg>
+                      <use xlinkHref="#omrs-icon-remove"></use>
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <% } %>
         </div>
+        <% } %>
       </div>
     </section>
   </section>

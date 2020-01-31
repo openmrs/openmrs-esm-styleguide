@@ -292,11 +292,23 @@
 }
 
 .omrs-increment-buttons div:nth-child(2) {
-  color: var(--omrs-color-interaction);
-  font-weight: bold;
+  display: flex;
   flex: 1;
+  margin: 0rem;
+  padding: 0rem;
+  justify-content: center;
+}
+
+.omrs-increment-buttons div:nth-child(2) input {
+  color: var(--omrs-color-interaction);
+  font-weight: 700;
+  text-align: center;
   background-color: var(--omrs-color-ink-white);
-  height: 100%;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.625rem 0rem;
+  border: none;
+  outline: none;
 }
 
 .omrs-increment-buttons div:nth-child(3) {
