@@ -198,7 +198,7 @@
 
 .omrs-datepicker input[type="date"]::-webkit-calendar-picker-indicator,
 .omrs-datepicker input[type="time"]::-webkit-calendar-picker-indicator {
-  display: none;
+  opacity: 0;
 }
 
 .omrs-datepicker input[type="date"],
@@ -219,6 +219,7 @@
   right: 0;
   margin-right: 0.25rem;
   fill: var(--omrs-color-ink-medium-contrast);
+  pointer-events: none;
 }
 
 .omrs-datepicker input[type="date"]:valid,
