@@ -1,10 +1,13 @@
 <article>
   <h1>Responsive breakpoints</h1>
   <section>
-    <h3>Your current device:</h3>
-    <p class="device-type phone">Phone</p>
-    <p class="device-type tablet">Tablet</p>
-    <p class="device-type desktop">Desktop</p>
+    <h3>Example</h3>
+    <p>
+      Your current device:
+      <span class="device-type phone">Phone</span>
+      <span class="device-type tablet">Tablet</span>
+      <span class="device-type desktop">Desktop</span>
+    </p>
   </section>
   <section>
     <div class="phone-breakpoint">
@@ -12,6 +15,31 @@
     </div>
     <div class="desktop-breakpoint">
       green background on a desktop, gray on other devices
+    </div>
+  </section>
+  <section>
+    <h3>Classes defined</h3>
+    <ul>
+      <li>omrs-breakpoint-lt-tablet</li>
+      <li>omrs-breakpoint-gt-phone</li>
+      <li>omrs-breakpoint-lt-desktop</li>
+      <li>omrs-breakpoint-gt-tablet</li>
+    </ul>
+  </section>
+  <section>
+    <h3>Usage</h3>
+    <div class="examples">
+      <div class="panels">
+        <div class="panel html">
+          <div class="stories-example lang-html">
+            <style>
+              :global(.omrs-breakpoint-lt-tablet) .some-div {
+                background-color: lightblue;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </article>
