@@ -17,6 +17,7 @@ import iconCalendar from "./svgs/calendar_24px_rounded.svg";
 import iconAccessTime from "./svgs/access_time-24px_rounded.svg";
 import iconAdd from "./svgs/add_24px_rounded.svg";
 import iconRemove from "./svgs/remove-24px_rounded.svg";
+import iconCheckCircle from "./svgs/check_circle-24px.svg";
 import { addSvg } from "../svg-utils";
 
 addSvg("omrs-icon-visibility", iconVisibility);
@@ -37,3 +38,4 @@ addSvg("omrs-icon-access-time", iconAccessTime);
 addSvg("omrs-icon-calendar", iconCalendar);
 addSvg("omrs-icon-add", iconAdd);
 addSvg("omrs-icon-remove", iconRemove);
+addSvg("omrs-icon-check-circle", iconCheckCircle);
