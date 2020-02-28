@@ -47,7 +47,7 @@
                 <button class="<%= determineStyle('button', buttonType, styleType, isRounded, isLarge) %>"
                     <% buttonType == 'disabled' ? 'disabled' : '' %> <%= disabledAttribute(styleType) %>>
                     A button
-                  </button>
+                </button>
             </div>
           </div>
           <div class="panel jsx">
@@ -55,7 +55,7 @@
                 <button className="<%= determineStyle('button', buttonType, styleType, isRounded, isLarge) %>"
                     <% buttonType == 'disabled' ? 'disabled' : '' %> <%= disabledAttribute(styleType) %>>
                     A button
-                  </button>
+                </button>
             </div>
           </div>
         </div>
@@ -150,6 +150,18 @@
   <section>
     <p>
       Whenever clicking on something causes the browser's url to change, it should be a link.
+    </p>
+    <p>
+      If using an onClick event listener, you should check for alternate click events
+      so that the user can open the link in a new tab if they want to.
+      <div class="stories-example lang-js">
+        function handleClick(event) {
+          if (!(event.ctrlKey || event.which == 2 || event.which == 3)) {
+            event.preventDefault();
+            // handle
+          }
+        }
+      </div>
     </p>
   </section>
   <h3>Style types</h3>
