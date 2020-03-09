@@ -11,6 +11,7 @@ export const icons = {
   Menu: "menu",
   Search: "search",
   "Arrow back": "arrow-back",
+  "Arrow forward": "arrow-forward",
   "Arrow downward": "arrow-downward",
   "Arrow upward": "arrow-upward",
   "Chevron left": "chevron-left",
