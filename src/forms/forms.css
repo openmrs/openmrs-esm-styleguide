@@ -138,7 +138,6 @@
 /* Radio button styles two */
 .omrs-radio-button input[type="radio"] + label {
   display: inline-flex;
-  position: absolute;
   left: 0;
 }
 
@@ -165,8 +164,8 @@
   height: 0.625rem;
   width: 0.625rem;
   transform: translate(-50%, -50%);
-  left: 0.625rem;
-  top: 0.625rem;
+  left: 0.875rem;
+  top: 0.875rem;
 }
 
 .omrs-radio-button input[type="radio"]:checked + label::before {
