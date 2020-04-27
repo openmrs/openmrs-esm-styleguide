@@ -26,7 +26,8 @@ export const icons = {
   Calendar: "calendar",
   Add: "add",
   Remove: "remove",
-  "Check Circle": "check-circle"
+  "Check Circle": "check-circle",
+  "Zoom out map": "zoomoutmap"
 };
 storiesOf("OpenMRS Styleguide", module).add("Icons", () => {
   const iconNames = Object.values(icons);
