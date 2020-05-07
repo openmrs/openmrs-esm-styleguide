@@ -1,8 +1,10 @@
 # openmrs-esm-styleguide
 [![Build Status](https://travis-ci.org/openmrs/openmrs-esm-styleguide.svg?branch=master)](https://travis-ci.org/openmrs/openmrs-esm-styleguide)
 
-The styleguide for OpenMRS
+The styleguide for OpenMRS.
 
-[Documentation website](http://styleguide.openmrs.org/?path=/story/openmrs-styleguide--buttons)
+Please see [styleguide.openmrs.org](http://styleguide.openmrs.org/)
 
-[Wiki page](https://wiki.openmrs.org/display/projects/openmrs-esm-styleguide)
+## Contributing / Development
+
+[Setup local development environment for OpenMRS SPA](https://wiki.openmrs.org/display/projects/Setup+local+development+environment+for+OpenMRS+SPA)
