@@ -231,6 +231,17 @@
   fill: var(--omrs-color-interaction);
 }
 
+.omrs-datepicker input[type="date"]:invalid,
+.omrs-datepicker input[type="time"]:invalid {
+  color: var(--omrs-color-danger);
+  border: 1px solid var(--omrs-color-danger);
+}
+
+.omrs-datepicker input[type="date"]:invalid + svg,
+.omrs-datepicker input[type="time"]:invalid + svg {
+  fill: var(--omrs-color-danger);
+}
+
 /* dropdown */
 
 .omrs-dropdown {
