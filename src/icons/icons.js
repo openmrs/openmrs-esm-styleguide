@@ -20,6 +20,7 @@ import iconAdd from "./svgs/add_24px_rounded.svg";
 import iconRemove from "./svgs/remove-24px_rounded.svg";
 import iconCheckCircle from "./svgs/check_circle-24px.svg";
 import iconZoomOutMap from "./svgs/zoom_out_map_24px_rounded.svg";
+import iconLocation from "./svgs/location-24px.svg";
 import { addSvg } from "../svg-utils";
 
 addSvg("omrs-icon-visibility", iconVisibility);
@@ -43,3 +44,4 @@ addSvg("omrs-icon-add", iconAdd);
 addSvg("omrs-icon-remove", iconRemove);
 addSvg("omrs-icon-check-circle", iconCheckCircle);
 addSvg("omrs-icon-zoomoutmap", iconZoomOutMap);
+addSvg("omrs-icon-location", iconLocation);

@@ -15,7 +15,10 @@ describe("svgs", () => {
         path.resolve(__dirname, "svgs", filePath)
       );
       const svgDoc = domParser.parseFromString(svgString, "text/html");
-      svgs.push({ filePath, svgEl: svgDoc.querySelector("svg"), svgDoc });
+      const svgEl = svgDoc.querySelector("svg");
+      if (svgEl) {
+        svgs.push({ filePath, svgEl: svgEl, svgDoc });
+      }
     });
   });
 
