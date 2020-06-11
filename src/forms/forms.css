@@ -190,6 +190,12 @@
   display: inline-flex;
 }
 
+.omrs-datepicker input[type="date"],
+.omrs-datepicker input[type="time"] {
+  font-family: "Roboto";
+  font-size: 1rem;
+}
+
 .omrs-datepicker input[type="date"]::-webkit-inner-spin-button,
 .omrs-datepicker input[type="time"]::-webkit-inner-spin-button {
   display: none;
