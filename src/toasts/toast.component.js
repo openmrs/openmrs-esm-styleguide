@@ -43,7 +43,10 @@ export default function Toast({ toast, closeToastRef, isClosing }) {
     >
       <span>{description}</span>
       <span>
-        <button className="omrs-btn-icon-medium" onClick={close}>
+        <button
+          className="omrs-btn-icon-medium"
+          onClick={() => closeToastRef.current(toast)}
+        >
           <svg className="omrs-icon" fill="var(--omrs-color-ink-white)">
             <use xlinkHref="#omrs-icon-close" />
           </svg>
