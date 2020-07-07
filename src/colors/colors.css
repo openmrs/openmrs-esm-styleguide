@@ -28,4 +28,10 @@
   --omrs-color-brand-gold: #eea616;
   --omrs-color-brand-teal: #009384;
   --omrs-color-brand-black: #231f20;
+
+  --omrs-bg-immunization-sequence-odd-row: #c4d7e6;
+  --omrs-bg-immunization-sequence-even-row: #e5f1fb;
+  --omrs-bg-immunization-odd-row: #fff;
+  --omrs-bg-immunization-even-row: #eee;
+  --omrs-bg-immunization-header: #c8cdd2;
 }
