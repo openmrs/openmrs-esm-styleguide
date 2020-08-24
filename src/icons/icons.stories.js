@@ -28,7 +28,8 @@ export const icons = {
   Remove: "remove",
   "Check Circle": "check-circle",
   "Zoom out map": "zoomoutmap",
-  "Location icon": "location"
+  "Location icon": "location",
+  "Download icon": "download"
 };
 storiesOf("OpenMRS Styleguide", module).add("Icons", () => {
   const iconNames = Object.values(icons);
