@@ -14,5 +14,6 @@ import "./button-icons/button-icons.css";
 import "./toasts/toasts.css";
 import "./responsive-breakpoints/responsive-breakpoints.js";
 import "./forms/forms.css";
+import "./carbon-esm-styleguide";
 
 export { showToast } from "./toasts/toasts.js";

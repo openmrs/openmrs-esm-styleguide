@@ -44,6 +44,9 @@ module.exports = {
     }
   },
   externals: [/^@openmrs\/.+$/, "react", "react-dom", "rxjs"],
+  resolve: {
+    modules: ["node_modules"]
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({ filename: "openmrs-esm-styleguide.css" })
