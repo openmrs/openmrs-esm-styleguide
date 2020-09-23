@@ -1,3 +1,3 @@
-import "../node_modules/carbon-components/css/carbon-components.min.css";
+import "./carbon-esm-styleguide.css";
 
-import "../node_modules/carbon-icons/dist/carbon-icons.js";
+import "carbon-icons/dist/carbon-icons.js";
