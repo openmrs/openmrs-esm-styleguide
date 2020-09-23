@@ -4,3 +4,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.canvas {
+  background-color: var(--omrs-color-bg-low-contrast);
+}
